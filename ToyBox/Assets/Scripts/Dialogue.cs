@@ -6,6 +6,8 @@ using TMPro;
 public class Dialogue : MonoBehaviour
 {
     public TextMeshProUGUI textcomponent;
+    public GameObject[] berries;
+    public bool gathered;
     public string[] lines;
     public float speed;
     private int index;
@@ -15,11 +17,17 @@ public class Dialogue : MonoBehaviour
         textcomponent.text = string.Empty;
         StartDialogue();
     }
-
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
-        
+        if (!berries[0].activeInHierarchy && !berries[1].activeInHierarchy && !berries[2].activeInHierarchy)
+        {
+            gathered = true;
+        }
+        if (gathered)
+        {
+            textcomponent.text = "[Sleeping]";
+            gathered = false;
+        }
     }
     void StartDialogue()
     {
