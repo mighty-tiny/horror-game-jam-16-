@@ -28,6 +28,19 @@ public class Dialogue : MonoBehaviour
             textcomponent.text = "[Sleeping]";
             gathered = false;
         }
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            if (textcomponent.text == lines[index])
+            {
+                NextLine();
+            }
+            else
+            {
+                StopAllCoroutines();
+                textcomponent.text = lines[index];
+            }
+        }
     }
     void StartDialogue()
     {
@@ -40,6 +53,19 @@ public class Dialogue : MonoBehaviour
         {
             textcomponent.text += c;
             yield return new WaitForSeconds(speed);
+        }
+    }
+    void NextLine()
+    {
+        if (index < lines.Length - 1)
+        {
+            index++;
+            textcomponent.text = string.Empty;
+            StartCoroutine(TypeLine());
+        }
+        else
+        {
+            gameObject.SetActive(false);
         }
     }
 }
