@@ -16,13 +16,11 @@ public class Throwing : MonoBehaviour
     public KeyCode throwKey = KeyCode.Mouse0;
     public float throwForce;
     public float throwUpwardForce;
-    public Animator animator;
     bool readyToThrow;
 
     private void Start()
     {
         readyToThrow = true;
-        animator = GameObject.FindGameObjectWithTag("GameController").GetComponent<Animator>();
     }
 
     private void Update()
@@ -39,8 +37,8 @@ public class Throwing : MonoBehaviour
         
         readyToThrow = false;
         
-        animator.SetBool("IsThrowing", true);
-        Invoke(nameof(ResetAnim), 0.2f);
+        
+        
 
         // instantiate object to throw
         GameObject projectile = Instantiate(objectToThrow, attackPoint.position, cam.rotation);
@@ -68,13 +66,8 @@ public class Throwing : MonoBehaviour
         // implement throwCooldown
         Invoke(nameof(ResetThrow), throwCooldown);
     }
-    private void ResetAnim()
-    {
-        animator.SetBool("IsThrowing", false);
-    }
     private void ResetThrow()
     {
-        animator.SetBool("IsThrowing", false);
         readyToThrow = true;
     }
 }
