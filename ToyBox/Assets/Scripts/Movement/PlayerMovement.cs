@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     [HideInInspector] public float sprintSpeed;
 
     [Header("Keybinds")]
-    public KeyCode jumpKey = KeyCode.Space;
+    public KeyCode Key = KeyCode.Space;
 
     [Header("Ground Check")]
     public float playerHeight = 2;
