@@ -23,8 +23,10 @@ public class PlayerMovement : MonoBehaviour
     public LayerMask whatIsGround;
     bool grounded;
 
+    [Header("Camera")]
     public Transform orientation;
-
+    static public bool CantControl;
+    public Transform Teddy;
     float horizontalInput;
     float verticalInput;
 
@@ -32,6 +34,11 @@ public class PlayerMovement : MonoBehaviour
 
     Rigidbody rb;
 
+    private void Awake()
+    {
+        CantControl = false;
+
+    }
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -56,7 +63,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        MovePlayer();
+        if (!CantControl)
+        {
+            MovePlayer();
+        }
+        
     }
 
     private void MyInput()

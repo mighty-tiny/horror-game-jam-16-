@@ -13,7 +13,8 @@ public class Dialogue : MonoBehaviour
     [Header("Story")]
     public GameObject[] berries;
     public bool gathered;
-    public AudioSource OpenDoor;
+    
+
     [Header("Preferences")]
     public float speed;
     private int index;
@@ -28,11 +29,15 @@ public class Dialogue : MonoBehaviour
     [Header("SoundCllp")]
     [SerializeField] private AudioSource YouSoundClip;
     [SerializeField] private AudioSource TeddySoundClip;
+    [Header("SoundStory")]
+    public AudioSource OpenDoor;
+    public AudioSource Knock;
     // Start is called before the first frame update
     void Start()
     {
         textcomponent.text = string.Empty;
         audioSource = gameObject.AddComponent<AudioSource>();
+        You = true;
         Teddy = false;
         StartDialogue();
         
@@ -74,29 +79,14 @@ public class Dialogue : MonoBehaviour
         {
             PlayDialogueSound(textcomponent.text.Length);
             textcomponent.text += c;
-            
-            audioSource.PlayOneShot(YouSoundClip.clip);
-            yield return new WaitForSeconds(speed);
-        }
-    }
-    IEnumerator TypeLineTeddy()
-    {
-        
-        foreach (char c in lines[index].ToCharArray())
-        {
-            PlayDialogueSound(textcomponent.text.Length);
-            textcomponent.text += c;
-
-            audioSource.PlayOneShot(YouSoundClip.clip);
-            yield return new WaitForSeconds(speed);
-        }
-    }
-    IEnumerator TypeLineNone()
-    {
-        foreach (char c in lines[index].ToCharArray())
-        {
-            PlayDialogueSound(textcomponent.text.Length);
-            textcomponent.text += c;
+            if (You)
+            {
+                audioSource.PlayOneShot(YouSoundClip.clip);
+            }
+            else if (Teddy)
+            {
+                audioSource.PlayOneShot(TeddySoundClip.clip);
+            }
             yield return new WaitForSeconds(speed);
         }
     }
@@ -106,29 +96,49 @@ public class Dialogue : MonoBehaviour
         {
             index++;
             textcomponent.text = string.Empty;
-            if (You)
-            {
-                StartCoroutine(TypeLineYou());
-            }
-            else if (Teddy)
-            {
-                StartCoroutine(TypeLineTeddy());
-            }
-            else
-            {
-                StartCoroutine(TypeLineNone());
-            }
+            StartCoroutine(TypeLineYou());
         }
         else
         {
             gameObject.SetActive(false);
         }
+
+
+        //DIALOGUES
+
+        if (index == 5)
+        {
+            namecomponent.text = "You";
+            Teddy = false;
+            You = true;
+
+        }
         if (index == 7)
         {
-            OpenDoor.Play();
+            namecomponent.text = "";
+            Instantiate(OpenDoor, transform.position ,Quaternion.identity);
             Current.SetActive(false);
+            Teddy = false;
+            You = false;
+
+        }
+        else if (index == 8 || index == 12)
+        {
             namecomponent.text = "Teddy";
             Teddy = true;
+            You = false;
+        }
+        else if (index == 4)
+        {
+            Instantiate(Knock, transform.position, Quaternion.identity);
+            namecomponent.text = "";
+            Teddy = false;
+            You = false;
+        }
+        else if (index == 10) {
+            namecomponent.text = "You";
+            Teddy = false;
+            You = true;
         }
     }
     private void PlayDialogueSound(int currentDisplayedCharacterCount)
