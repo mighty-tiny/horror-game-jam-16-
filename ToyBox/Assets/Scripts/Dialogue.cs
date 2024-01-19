@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using UnityEngine.UI;
 
 public class Dialogue : MonoBehaviour
 {
@@ -16,7 +17,7 @@ public class Dialogue : MonoBehaviour
     [Header("Preferences")]
     public float speed;
     private int index;
-    [SerializeField] private SpriteRenderer Current;
+    [SerializeField] private Image Current;
     [Header("Sound")]
     private AudioSource audioSource;
     [SerializeField] private AudioSource dialogueTypingSoundClip;
@@ -28,7 +29,7 @@ public class Dialogue : MonoBehaviour
         textcomponent.text = string.Empty;
         audioSource = gameObject.AddComponent<AudioSource>();
         StartDialogue();
-        StartCoroutine(FadeOut());
+        
     }
     private void Update()
     {
@@ -84,6 +85,12 @@ public class Dialogue : MonoBehaviour
         {
             gameObject.SetActive(false);
         }
+        if (index == 7)
+        {
+            OpenDoor.Play();
+            FadeIn();
+            namecomponent.text = "Teddy";
+        }
     }
     private void PlayDialogueSound(int currentDisplayedCharacterCount)
     {
@@ -97,7 +104,7 @@ public class Dialogue : MonoBehaviour
     }
     IEnumerator FadeOut()
     {
-        for (float f = 0.1f; f <= 1f; f += 0.1f)
+        for (float f = 1f; f >= 0f; f -= 0.5f)
         {
             Color c = Current.material.color;
             c.a = f;
@@ -109,7 +116,7 @@ public class Dialogue : MonoBehaviour
     void FadeIn()
     {
         Color c = Current.material.color;
-        c.a = 0;
+        c.a = 0f;
         Current.material.color = c;
     }
 }
