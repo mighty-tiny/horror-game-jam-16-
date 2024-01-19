@@ -17,17 +17,23 @@ public class Dialogue : MonoBehaviour
     [Header("Preferences")]
     public float speed;
     private int index;
-    [SerializeField] private Image Current;
+    [SerializeField] private GameObject Current;
+    public bool Teddy;
+    public bool You;
+    public bool Soldier;
     [Header("Sound")]
     private AudioSource audioSource;
-    [SerializeField] private AudioSource dialogueTypingSoundClip;
     [SerializeField] private bool stopAudio;
     [SerializeField] private int FrequencyLevel = 5;
+    [Header("SoundCllp")]
+    [SerializeField] private AudioSource YouSoundClip;
+    [SerializeField] private AudioSource TeddySoundClip;
     // Start is called before the first frame update
     void Start()
     {
         textcomponent.text = string.Empty;
         audioSource = gameObject.AddComponent<AudioSource>();
+        Teddy = false;
         StartDialogue();
         
     }
@@ -60,16 +66,37 @@ public class Dialogue : MonoBehaviour
     void StartDialogue()
     {
         index = 0;
-        StartCoroutine(TypeLine());
+        StartCoroutine(TypeLineYou());
     }
-    IEnumerator TypeLine()
+    IEnumerator TypeLineYou()
     {
         foreach (char c in lines[index].ToCharArray())
         {
             PlayDialogueSound(textcomponent.text.Length);
             textcomponent.text += c;
             
-            audioSource.PlayOneShot(dialogueTypingSoundClip.clip);
+            audioSource.PlayOneShot(YouSoundClip.clip);
+            yield return new WaitForSeconds(speed);
+        }
+    }
+    IEnumerator TypeLineTeddy()
+    {
+        
+        foreach (char c in lines[index].ToCharArray())
+        {
+            PlayDialogueSound(textcomponent.text.Length);
+            textcomponent.text += c;
+
+            audioSource.PlayOneShot(YouSoundClip.clip);
+            yield return new WaitForSeconds(speed);
+        }
+    }
+    IEnumerator TypeLineNone()
+    {
+        foreach (char c in lines[index].ToCharArray())
+        {
+            PlayDialogueSound(textcomponent.text.Length);
+            textcomponent.text += c;
             yield return new WaitForSeconds(speed);
         }
     }
@@ -79,7 +106,18 @@ public class Dialogue : MonoBehaviour
         {
             index++;
             textcomponent.text = string.Empty;
-            StartCoroutine(TypeLine());
+            if (You)
+            {
+                StartCoroutine(TypeLineYou());
+            }
+            else if (Teddy)
+            {
+                StartCoroutine(TypeLineTeddy());
+            }
+            else
+            {
+                StartCoroutine(TypeLineNone());
+            }
         }
         else
         {
@@ -88,8 +126,9 @@ public class Dialogue : MonoBehaviour
         if (index == 7)
         {
             OpenDoor.Play();
-            FadeIn();
+            Current.SetActive(false);
             namecomponent.text = "Teddy";
+            Teddy = true;
         }
     }
     private void PlayDialogueSound(int currentDisplayedCharacterCount)
@@ -102,21 +141,21 @@ public class Dialogue : MonoBehaviour
             }
         }
     }
-    IEnumerator FadeOut()
-    {
-        for (float f = 1f; f >= 0f; f -= 0.5f)
-        {
-            Color c = Current.material.color;
-            c.a = f;
-            Current.material.color = c;
-            yield return new WaitForSeconds(0.05f);
+    //IEnumerator FadeOut()
+    //{
+    //    for (float f = 1f; f >= 0f; f -= 0.5f)
+    //    {
+    //        Color c = Current.material.color;
+    //        c.a = f;
+    //        Current.material.color = c;
+    //        yield return new WaitForSeconds(0.05f);
 
-        }
-    }
-    void FadeIn()
-    {
-        Color c = Current.material.color;
-        c.a = 0f;
-        Current.material.color = c;
-    }
+    //    }
+    //}
+    //void FadeIn()
+    //{
+    //    Color c = Current.material.color;
+    //    c.a = 0f;
+    //    Current.material.color = c;
+    //}
 }
