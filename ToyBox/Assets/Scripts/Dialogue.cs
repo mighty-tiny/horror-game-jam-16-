@@ -16,6 +16,7 @@ public class Dialogue : MonoBehaviour
     [Header("Preferences")]
     public float speed;
     private int index;
+    [SerializeField] private SpriteRenderer Current;
     [Header("Sound")]
     private AudioSource audioSource;
     [SerializeField] private AudioSource dialogueTypingSoundClip;
@@ -27,6 +28,7 @@ public class Dialogue : MonoBehaviour
         textcomponent.text = string.Empty;
         audioSource = gameObject.AddComponent<AudioSource>();
         StartDialogue();
+        StartCoroutine(FadeOut());
     }
     private void Update()
     {
@@ -92,5 +94,22 @@ public class Dialogue : MonoBehaviour
                 audioSource.Stop();
             }
         }
+    }
+    IEnumerator FadeOut()
+    {
+        for (float f = 0.1f; f <= 1f; f += 0.1f)
+        {
+            Color c = Current.material.color;
+            c.a = f;
+            Current.material.color = c;
+            yield return new WaitForSeconds(0.05f);
+
+        }
+    }
+    void FadeIn()
+    {
+        Color c = Current.material.color;
+        c.a = 0;
+        Current.material.color = c;
     }
 }
