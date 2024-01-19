@@ -5,16 +5,27 @@ using TMPro;
 
 public class Dialogue : MonoBehaviour
 {
+    [Header("Text")]
     public TextMeshProUGUI textcomponent;
+    public TextMeshProUGUI namecomponent;
+    public string[] lines;
+    [Header("Story")]
     public GameObject[] berries;
     public bool gathered;
-    public string[] lines;
+    public AudioSource OpenDoor;
+    [Header("Preferences")]
     public float speed;
     private int index;
+    [Header("Sound")]
+    private AudioSource audioSource;
+    [SerializeField] private AudioSource dialogueTypingSoundClip;
+    [SerializeField] private bool stopAudio;
+    [SerializeField] private int FrequencyLevel = 5;
     // Start is called before the first frame update
     void Start()
     {
         textcomponent.text = string.Empty;
+        audioSource = gameObject.AddComponent<AudioSource>();
         StartDialogue();
     }
     private void Update()
@@ -25,6 +36,7 @@ public class Dialogue : MonoBehaviour
         }
         if (gathered)
         {
+            namecomponent.text = "Teddy";
             textcomponent.text = "[Sleeping]";
             gathered = false;
         }
@@ -49,9 +61,12 @@ public class Dialogue : MonoBehaviour
     }
     IEnumerator TypeLine()
     {
-        foreach(char c in lines[index].ToCharArray())
+        foreach (char c in lines[index].ToCharArray())
         {
+            PlayDialogueSound(textcomponent.text.Length);
             textcomponent.text += c;
+            
+            audioSource.PlayOneShot(dialogueTypingSoundClip.clip);
             yield return new WaitForSeconds(speed);
         }
     }
@@ -66,6 +81,16 @@ public class Dialogue : MonoBehaviour
         else
         {
             gameObject.SetActive(false);
+        }
+    }
+    private void PlayDialogueSound(int currentDisplayedCharacterCount)
+    {
+        if (currentDisplayedCharacterCount % FrequencyLevel == 0)
+        {
+            if (stopAudio)
+            {
+                audioSource.Stop();
+            }
         }
     }
 }
