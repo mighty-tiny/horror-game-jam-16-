@@ -24,7 +24,10 @@ public class Dialogue : MonoBehaviour
     public bool Soldier;
     [Header("Sound")]
     private AudioSource audioSource;
+    private DialogueAudioPlayer youDialogueAudioPlayer;
+    private DialogueAudioPlayer teddyDialogueAudioPlayer;
     [SerializeField] private bool stopAudio;
+    [SerializeField] private GameObject audioSourcePrefab;
     [SerializeField] private int FrequencyLevel = 5;
     [Header("SoundCllp")]
     [SerializeField] private AudioSource YouSoundClip;
@@ -37,6 +40,10 @@ public class Dialogue : MonoBehaviour
     {
         textcomponent.text = string.Empty;
         audioSource = gameObject.AddComponent<AudioSource>();
+
+        youDialogueAudioPlayer = new DialogueAudioPlayer(YouSoundClip.gameObject);
+        teddyDialogueAudioPlayer = new DialogueAudioPlayer(TeddySoundClip.gameObject);
+
         You = true;
         Teddy = false;
         StartDialogue();
@@ -81,11 +88,11 @@ public class Dialogue : MonoBehaviour
             textcomponent.text += c;
             if (You)
             {
-                audioSource.PlayOneShot(YouSoundClip.clip);
+                youDialogueAudioPlayer.Play();
             }
             else if (Teddy)
             {
-                audioSource.PlayOneShot(TeddySoundClip.clip);
+                teddyDialogueAudioPlayer.Play();
             }
             yield return new WaitForSeconds(speed);
         }
