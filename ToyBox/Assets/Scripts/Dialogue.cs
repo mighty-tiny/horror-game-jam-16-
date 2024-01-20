@@ -27,7 +27,6 @@ public class Dialogue : MonoBehaviour
     private DialogueAudioPlayer youDialogueAudioPlayer;
     private DialogueAudioPlayer teddyDialogueAudioPlayer;
     [SerializeField] private bool stopAudio;
-    [SerializeField] private GameObject audioSourcePrefab;
     [SerializeField] private int FrequencyLevel = 5;
     [Header("SoundCllp")]
     [SerializeField] private AudioSource YouSoundClip;

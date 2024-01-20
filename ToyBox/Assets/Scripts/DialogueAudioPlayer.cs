@@ -6,9 +6,10 @@ public class DialogueAudioPlayer
     private GameObject _sourcePrefab;
     private AudioClip _clip;
 
+    private int _sourcesCount = 13;
     private List<AudioSource> sources;
 
-    public DialogueAudioPlayer(GameObject sourcePrefab, float timePeriod) : this(sourcePrefab, sourcePrefab.GetComponent<AudioSource>().clip) {}
+    public DialogueAudioPlayer(GameObject sourcePrefab) : this(sourcePrefab, sourcePrefab.GetComponent<AudioSource>().clip) {}
 
     public DialogueAudioPlayer(GameObject sourcePrefab, AudioClip clip)
     {
@@ -19,7 +20,7 @@ public class DialogueAudioPlayer
         GameObject currentObject;
         AudioSource currentSource;
 
-        for(int i = 0; i < 20; i++)
+        for(int i = 0; i < _sourcesCount; i++)
         {
             currentObject = (GameObject)Object.Instantiate(sourcePrefab);
             
