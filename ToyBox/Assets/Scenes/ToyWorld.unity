@@ -23862,13 +23862,13 @@ Light:
   m_Type: 1
   m_Shape: 0
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
-  m_Intensity: 1.5
+  m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 1
     m_Resolution: -1
     m_CustomResolution: -1
     m_Strength: 1
@@ -23904,7 +23904,7 @@ Light:
   m_Lightmapping: 1
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
-  m_BounceIntensity: 1.5
+  m_BounceIntensity: 1
   m_ColorTemperature: 6570
   m_UseColorTemperature: 0
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
@@ -23920,13 +23920,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 705507993}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.00913749, y: 0.8628294, z: -0.49806717, w: 0.085855275}
-  m_LocalPosition: {x: -1.221, y: 11.006, z: 5.25}
+  m_LocalRotation: {x: -0.048388068, y: 0.85609275, z: -0.5136519, w: 0.030424193}
+  m_LocalPosition: {x: -1.63, y: 10.97, z: 5.13}
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 59.436, y: 164.13, z: -7.885}
+  m_LocalEulerAnglesHint: {x: 61.226, y: 167.791, z: -13.712}
 --- !u!1001 &706242480
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -25191,9 +25191,21 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: ca20bc82172b022418da8a79d312817a, type: 3}
+      propertyPath: m_CastShadows
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: ca20bc82172b022418da8a79d312817a, type: 3}
+      propertyPath: m_ReceiveShadows
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: ca20bc82172b022418da8a79d312817a, type: 3}
       propertyPath: m_Name
       value: ToyBear-0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8164078558771037576, guid: ca20bc82172b022418da8a79d312817a, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
