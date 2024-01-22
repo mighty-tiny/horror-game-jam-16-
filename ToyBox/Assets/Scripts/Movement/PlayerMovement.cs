@@ -36,8 +36,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void Awake()
     {
-        CantControl = false;
-
+        CantControl = true;
     }
     private void Start()
     {
@@ -72,15 +71,20 @@ public class PlayerMovement : MonoBehaviour
 
     private void MyInput()
     {
-        horizontalInput = Input.GetAxisRaw("Horizontal");
-        verticalInput = Input.GetAxisRaw("Vertical");
+        if (!CantControl)
+        {
+            horizontalInput = Input.GetAxisRaw("Horizontal");
+            verticalInput = Input.GetAxisRaw("Vertical");
+        }
+        
 
     }
 
     private void MovePlayer()
     {
         // calculate movement direction
-        moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
+        if (!CantControl)
+            moveDirection = orientation.forward * verticalInput + orientation.right * horizontalInput;
 
         // on ground
         if (grounded)
