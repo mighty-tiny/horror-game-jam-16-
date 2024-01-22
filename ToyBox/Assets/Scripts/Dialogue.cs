@@ -145,6 +145,10 @@ public class Dialogue : MonoBehaviour
             Teddy = false;
             You = true;
         }
+        else if (index == 12)
+        {
+            PlayerMovement.CantControl = false;
+        }
     }
     private void PlayDialogueSound(int currentDisplayedCharacterCount)
     {
