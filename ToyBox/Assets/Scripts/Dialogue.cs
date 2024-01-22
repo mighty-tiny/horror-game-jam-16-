@@ -12,6 +12,8 @@ public class Dialogue : MonoBehaviour
     [Header("Story")]
     public GameObject[] berries;
     public bool gathered;
+    [Header("GameObjects")]
+    public GameObject DialogueWindow;
     
 
     [Header("Preferences")]
@@ -44,7 +46,7 @@ public class Dialogue : MonoBehaviour
 
         You = true;
         Teddy = false;
-        StartDialogue();
+        StartDialogue(0);
         
     }
     private void Update()
@@ -55,9 +57,9 @@ public class Dialogue : MonoBehaviour
         }
         if (gathered)
         {
-            namecomponent.text = "Teddy";
-            textcomponent.text = "[Sleeping]";
+            StartDialogue(14);
             gathered = false;
+            
         }
 
         if (Input.GetMouseButtonDown(0))
@@ -73,9 +75,10 @@ public class Dialogue : MonoBehaviour
             }
         }
     }
-    void StartDialogue()
+    void StartDialogue(int i)
     {
-        index = 0;
+        DialogueWindow.SetActive(true);
+        index = i;
         StartCoroutine(TypeLineYou());
     }
     IEnumerator TypeLineYou()
@@ -105,7 +108,7 @@ public class Dialogue : MonoBehaviour
         }
         else
         {
-            gameObject.SetActive(false);
+            DialogueWindow.SetActive(false);
         }
 
 
@@ -145,10 +148,18 @@ public class Dialogue : MonoBehaviour
             Teddy = false;
             You = true;
         }
-        else if (index == 12)
+        else if (index == 14)
         {
             PlayerMovement.CantControl = false;
+            DialogueWindow.SetActive(false);
+            namecomponent.text = "Teddy";
+            //textcomponent.text = "[Sleeping]";
+            Teddy = true;
+            You = false;
+            StopCoroutine(TypeLineYou());
         }
+
+
     }
     private void PlayDialogueSound(int currentDisplayedCharacterCount)
     {

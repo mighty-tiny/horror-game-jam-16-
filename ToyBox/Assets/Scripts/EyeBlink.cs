@@ -90,4 +90,17 @@ public class EyeBlink : MonoBehaviour
             yield return new WaitForEndOfFrame();
         }
     }
+    public void quickBlink()
+    {
+        //close
+        originalUpperPosition.y = Screen.height * 2;
+        originalLowerPosition.y = -Screen.height;
+
+        //open
+        endUpper = originalUpperPosition;
+        endLower = originalLowerPosition;
+
+        endUpper.y += (50 * currentBlink);
+        endLower.y -= (50 * currentBlink);
+    }
 }
