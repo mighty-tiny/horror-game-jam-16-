@@ -57,8 +57,7 @@ public class Dialogue : MonoBehaviour
         }
         if (gathered)
         {
-            StartDialogue(14);
-            gathered = false;
+            Gathered();
             
         }
 
@@ -74,6 +73,12 @@ public class Dialogue : MonoBehaviour
                 textcomponent.text = lines[index];
             }
         }
+    }
+    void Gathered()
+    {
+        textcomponent.text = string.Empty;
+        StartDialogue(14);
+        gathered = false;
     }
     void StartDialogue(int i)
     {
