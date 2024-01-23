@@ -17,10 +17,25 @@ public class Throwing : MonoBehaviour
     public float throwForce;
     public float throwUpwardForce;
     bool readyToThrow;
-
+    [Header("Text")]
+    public GameObject ClickE;
+    [Header("PickedObjects")]
+    public GameObject Bee; 
     private void Start()
     {
-        readyToThrow = true;
+        readyToThrow = false;
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.CompareTag("Bee"))
+        {
+            other.gameObject.SetActive(false);
+            readyToThrow = true;
+            Bee.gameObject.SetActive(true);
+            ClickE.SetActive(true);
+            
+        }
     }
 
     private void Update()
@@ -34,11 +49,10 @@ public class Throwing : MonoBehaviour
     private void Throw()
     {
 
-        
         readyToThrow = false;
-        
-        
-        
+        Bee.gameObject.SetActive(false);
+        ClickE.gameObject.SetActive(false);
+
 
         // instantiate object to throw
         GameObject projectile = Instantiate(objectToThrow, attackPoint.position, cam.rotation);
@@ -62,6 +76,7 @@ public class Throwing : MonoBehaviour
         projectileRb.AddForce(forceToAdd, ForceMode.Impulse);
 
         totalThrows--;
+        
 
         // implement throwCooldown
         Invoke(nameof(ResetThrow), throwCooldown);

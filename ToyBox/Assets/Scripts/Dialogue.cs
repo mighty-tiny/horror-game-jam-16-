@@ -1,7 +1,6 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
-using UnityEngine.UI;
 
 public class Dialogue : MonoBehaviour
 {
@@ -35,6 +34,8 @@ public class Dialogue : MonoBehaviour
     [Header("SoundStory")]
     public AudioSource OpenDoor;
     public AudioSource Knock;
+    [Header("Tasks")]
+    public GameObject Task1;
     // Start is called before the first frame update
     void Start()
     {
@@ -76,6 +77,7 @@ public class Dialogue : MonoBehaviour
     }
     void Gathered()
     {
+        Task1.SetActive(false);
         textcomponent.text = string.Empty;
         StartDialogue(14);
         gathered = false;
@@ -155,6 +157,7 @@ public class Dialogue : MonoBehaviour
         }
         else if (index == 14)
         {
+            Task1.SetActive(true);
             PlayerMovement.CantControl = false;
             DialogueWindow.SetActive(false);
             namecomponent.text = "Teddy";
