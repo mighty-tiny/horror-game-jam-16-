@@ -10,10 +10,10 @@ public class Dialogue : MonoBehaviour
     public string[] lines;
     [Header("Story")]
     public GameObject[] berries;
-    public bool gathered;
+    private bool gathered;
     [Header("GameObjects")]
     public GameObject DialogueWindow;
-    
+    public GameObject BlackScreen;
 
     [Header("Preferences")]
     public float speed;
@@ -22,6 +22,7 @@ public class Dialogue : MonoBehaviour
     public bool Teddy;
     public bool You;
     public bool Soldier;
+    bool clickable;
     [Header("Sound")]
     private AudioSource audioSource;
     private DialogueAudioPlayer youDialogueAudioPlayer;
@@ -47,11 +48,14 @@ public class Dialogue : MonoBehaviour
 
         You = true;
         Teddy = false;
-        StartDialogue(0);
-        
+        StartDialogue();
+
     }
     private void Update()
     {
+        if (Input.GetKeyDown(KeyCode.Space)) {
+            Skip();
+        }
         if (!berries[0].activeInHierarchy && !berries[1].activeInHierarchy && !berries[2].activeInHierarchy)
         {
             gathered = true;
@@ -59,10 +63,10 @@ public class Dialogue : MonoBehaviour
         if (gathered)
         {
             Gathered();
-            
+
         }
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && clickable)
         {
             if (textcomponent.text == lines[index])
             {
@@ -77,15 +81,17 @@ public class Dialogue : MonoBehaviour
     }
     void Gathered()
     {
+
         Task1.SetActive(false);
         textcomponent.text = string.Empty;
-        StartDialogue(14);
+        DialogueWindow.SetActive(true);
+        NextLine();
         gathered = false;
     }
-    void StartDialogue(int i)
+    void StartDialogue()
     {
         DialogueWindow.SetActive(true);
-        index = i;
+        index = 0;
         StartCoroutine(TypeLineYou());
     }
     IEnumerator TypeLineYou()
@@ -121,6 +127,8 @@ public class Dialogue : MonoBehaviour
 
         //DIALOGUES
 
+        //PHASE 1
+
         if (index == 5)
         {
             namecomponent.text = "You";
@@ -131,7 +139,7 @@ public class Dialogue : MonoBehaviour
         if (index == 7)
         {
             namecomponent.text = "";
-            Instantiate(OpenDoor, transform.position ,Quaternion.identity);
+            Instantiate(OpenDoor, transform.position, Quaternion.identity);
             Current.SetActive(false);
             Teddy = false;
             You = false;
@@ -150,24 +158,30 @@ public class Dialogue : MonoBehaviour
             Teddy = false;
             You = false;
         }
-        else if (index == 10) {
+        else if (index == 10)
+        {
             namecomponent.text = "You";
             Teddy = false;
             You = true;
         }
         else if (index == 14)
         {
-            Task1.SetActive(true);
-            PlayerMovement.CantControl = false;
-            DialogueWindow.SetActive(false);
-            namecomponent.text = "Teddy";
-            //textcomponent.text = "[Sleeping]";
-            Teddy = true;
-            You = false;
-            StopCoroutine(TypeLineYou());
+            Phase1();
         }
 
 
+    }
+    void Phase1()
+    {
+        Task1.SetActive(true);
+
+        PlayerMovement.CantControl = false;
+        DialogueWindow.SetActive(false);
+        namecomponent.text = "Teddy";
+        BlackScreen.SetActive(false);
+        //textcomponent.text = "[Sleeping]";
+        Teddy = true;
+        You = false;
     }
     private void PlayDialogueSound(int currentDisplayedCharacterCount)
     {
@@ -179,6 +193,14 @@ public class Dialogue : MonoBehaviour
             }
         }
     }
+    public void Skip()
+    {
+        if (index < 14)
+        {
+            Phase1();
+        }
+    }
+
     //IEnumerator FadeOut()
     //{
     //    for (float f = 1f; f >= 0f; f -= 0.5f)
@@ -197,3 +219,4 @@ public class Dialogue : MonoBehaviour
     //    Current.material.color = c;
     //}
 }
+
