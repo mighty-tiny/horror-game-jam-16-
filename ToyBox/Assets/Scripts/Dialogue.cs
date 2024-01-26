@@ -53,9 +53,7 @@ public class Dialogue : MonoBehaviour
     }
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space)) {
-            Skip();
-        }
+        
         if (!berries[0].activeInHierarchy && !berries[1].activeInHierarchy && !berries[2].activeInHierarchy)
         {
             gathered = true;
@@ -78,18 +76,23 @@ public class Dialogue : MonoBehaviour
                 textcomponent.text = lines[index];
             }
         }
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            Skip();
+        }
     }
     void Gathered()
     {
-
+        clickable = true;
         Task1.SetActive(false);
-        textcomponent.text = string.Empty;
+        textcomponent.text = "[Sleeping]";
         DialogueWindow.SetActive(true);
-        NextLine();
+        index = 15;
         gathered = false;
     }
     void StartDialogue()
     {
+        clickable = true;
         DialogueWindow.SetActive(true);
         index = 0;
         StartCoroutine(TypeLineYou());
@@ -177,8 +180,10 @@ public class Dialogue : MonoBehaviour
 
         PlayerMovement.CantControl = false;
         DialogueWindow.SetActive(false);
+        textcomponent.text = string.Empty;
         namecomponent.text = "Teddy";
         BlackScreen.SetActive(false);
+        clickable = false;
         //textcomponent.text = "[Sleeping]";
         Teddy = true;
         You = false;
