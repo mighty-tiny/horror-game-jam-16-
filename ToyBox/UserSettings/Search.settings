@@ -8,6 +8,9 @@ onBoardingDoNotAskAgain = true
 showPackageIndexes = false
 showStatusBar = false
 scopes = {
+	"last_search.D379D912" = "quick outli"
+	"OpenInspectorPreview.D379D912" = "0"
+	"currentGroup.D379D912" = "all"
 }
 providers = {
 	scene = {
