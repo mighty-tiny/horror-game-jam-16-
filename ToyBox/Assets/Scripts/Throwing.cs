@@ -95,7 +95,7 @@ public class Throwing : MonoBehaviour
     }
     public void FadeOut()
     {
-        for (float f = 1f; f >= 0f; f += 0.5f)
+        for (float f = 0.1f; f <= 1f; f += 0.2f)
         {
             Color c = Current.material.color;
             c.a = f;
