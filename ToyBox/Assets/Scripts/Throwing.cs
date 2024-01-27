@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Throwing : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Throwing : MonoBehaviour
     public Transform cam;
     public Transform attackPoint;
     public GameObject objectToThrow;
+    public Image Current;
     [Header("Settings")]
     public int totalThrows;
     public float throwCooldown;
@@ -40,8 +42,14 @@ public class Throwing : MonoBehaviour
 
     private void Update()
     {
-        if(Input.GetKeyDown(throwKey) && readyToThrow && totalThrows > 0)
+        if (Input.GetKey(throwKey))
         {
+            FadeOut();
+        }
+
+        else if(Input.GetKeyUp(throwKey) && readyToThrow && totalThrows > 0)
+        {
+
             Throw();
         }
     }
@@ -84,5 +92,15 @@ public class Throwing : MonoBehaviour
     private void ResetThrow()
     {
         readyToThrow = true;
+    }
+    public void FadeOut()
+    {
+        for (float f = 1f; f >= 0f; f += 0.5f)
+        {
+            Color c = Current.material.color;
+            c.a = f;
+            Current.material.color = c;
+
+        }
     }
 }
