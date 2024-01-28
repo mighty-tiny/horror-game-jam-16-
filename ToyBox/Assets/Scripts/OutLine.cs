@@ -15,7 +15,7 @@ public class OutLine : MonoBehaviour
         Debug.DrawRay(_playerCamera.transform.position, _playerCamera.transform.forward * _maxRayDistance, Color.green);
         if (Physics.Raycast(_playerCamera.transform.position, _playerCamera.transform.forward, out hit, _maxRayDistance))
         {
-            if (hit.transform.gameObject.CompareTag("Bee") || hit.transform.gameObject.CompareTag("Tower"))
+            if (hit.transform.gameObject.CompareTag("Bee"))
             {
                 if (outlineLast != null)
                 {
@@ -24,10 +24,6 @@ public class OutLine : MonoBehaviour
 
                 outlineLast = hit.transform.gameObject.GetComponent<Outline>();
                 outlineLast.enabled = true;
-
-                
-                
-                
             }
             else if (outlineLast != null)
             {
