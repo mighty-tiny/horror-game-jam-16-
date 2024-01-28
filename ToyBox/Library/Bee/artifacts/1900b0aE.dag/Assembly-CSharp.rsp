@@ -364,6 +364,7 @@
 "Assets/Scripts/Movement/MoveCamera.cs"
 "Assets/Scripts/Movement/PlayerCam.cs"
 "Assets/Scripts/Movement/PlayerMovement.cs"
+"Assets/Scripts/NewBehaviourScript.cs"
 "Assets/Scripts/OutLine.cs"
 "Assets/Scripts/Throwing.cs"
 "Assets/StairClimb.cs"

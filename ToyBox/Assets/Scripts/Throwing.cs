@@ -22,10 +22,13 @@ public class Throwing : MonoBehaviour
     [Header("Text")]
     public GameObject ClickE;
     [Header("PickedObjects")]
-    public GameObject Bee; 
+    public GameObject Bee;
+
+    float f;
     private void Start()
     {
         readyToThrow = false;
+        Current = GetComponent<Image>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -44,7 +47,11 @@ public class Throwing : MonoBehaviour
     {
         if (Input.GetKey(throwKey))
         {
-            FadeOut();
+            Color c = Current.material.color;
+            c.a = f;
+            if (f <= 1)
+                f += 0.1f;
+            Current.material.color = c;
         }
 
         else if(Input.GetKeyUp(throwKey) && readyToThrow && totalThrows > 0)
@@ -60,7 +67,7 @@ public class Throwing : MonoBehaviour
         readyToThrow = false;
         Bee.gameObject.SetActive(false);
         ClickE.gameObject.SetActive(false);
-
+        f = 0;
 
         // instantiate object to throw
         GameObject projectile = Instantiate(objectToThrow, attackPoint.position, cam.rotation);

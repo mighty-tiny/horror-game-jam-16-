@@ -15,7 +15,7 @@ public class DetectTarget : MonoBehaviour
             var i = ((float)bucket.position.y);
             do
             {
-                i -= 0.2f;
+                i -= 0.5f;
             } while (i < 0);
         }
     }

@@ -24,6 +24,7 @@ public class OutLine : MonoBehaviour
 
                 outlineLast = hit.transform.gameObject.GetComponent<Outline>();
                 outlineLast.enabled = true;
+
                 
                 
                 
