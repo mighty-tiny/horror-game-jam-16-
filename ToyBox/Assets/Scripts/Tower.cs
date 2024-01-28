@@ -5,7 +5,7 @@ using UnityEngine;
 public class Tower : MonoBehaviour
 {
     bool towered;
-    
+    public GameObject cam;
     public GameObject text;
     [Header("Keybinds")]
     public KeyCode Key = KeyCode.Space;
@@ -20,7 +20,8 @@ public class Tower : MonoBehaviour
             outline.enabled = true;
             if (Input.GetKeyDown(Key))
             {
-                transform.position = TowerPos.position;
+                cam.transform.position = new Vector4(7.44f, 17.81f, 12.4f, 0);
+                transform.position = new Vector4(7.44f, 17.81f, 12.4f, 0);
             }
 
         }
