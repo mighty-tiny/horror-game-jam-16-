@@ -25,6 +25,7 @@ public class Throwing : MonoBehaviour
     public GameObject Bee;
 
     float f;
+    public Slider Slider;
     private void Start()
     {
         readyToThrow = false;
@@ -39,7 +40,7 @@ public class Throwing : MonoBehaviour
             readyToThrow = true;
             Bee.gameObject.SetActive(true);
             ClickE.SetActive(true);
-            
+            Slider.gameObject.SetActive(true);
         }
     }
 
@@ -47,11 +48,12 @@ public class Throwing : MonoBehaviour
     {
         if (Input.GetKey(throwKey))
         {
-            Color c = Current.material.color;
-            c.a = f;
-            if (f <= 1)
-                f += 0.1f;
-            Current.material.color = c;
+            Slider.value += 0.01f;
+            //Color c = Current.material.color;
+            //c.a = f;
+            //if (f <= 1)
+            //    f += 0.1f;
+            //Current.material.color = c;
         }
 
         else if(Input.GetKeyUp(throwKey) && readyToThrow && totalThrows > 0)
@@ -68,6 +70,7 @@ public class Throwing : MonoBehaviour
         Bee.gameObject.SetActive(false);
         ClickE.gameObject.SetActive(false);
         f = 0;
+        throwForce = Slider.value * 100;
 
         // instantiate object to throw
         GameObject projectile = Instantiate(objectToThrow, attackPoint.position, cam.rotation);
@@ -91,13 +94,13 @@ public class Throwing : MonoBehaviour
         projectileRb.AddForce(forceToAdd, ForceMode.Impulse);
 
         totalThrows--;
-        
 
         // implement throwCooldown
         Invoke(nameof(ResetThrow), throwCooldown);
     }
     private void ResetThrow()
     {
+        Slider.value = 0;
         readyToThrow = true;
     }
     public void FadeOut()
