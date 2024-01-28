@@ -3,7 +3,9 @@ guid: 6b71d3e7471d6f847a7118edcf6abe76
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - stepRayUpper: {fileID: 9054809460775727331, guid: cd48cbdfa8a47d4458a6ecfd730a5d87, type: 3}
+  - stepRayLower: {fileID: 5103628951753620185, guid: 88305b18a194e64499cb4f7f09f7a82f, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
