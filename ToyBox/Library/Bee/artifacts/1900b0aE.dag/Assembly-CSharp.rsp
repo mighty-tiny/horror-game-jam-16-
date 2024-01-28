@@ -364,11 +364,11 @@
 "Assets/Scripts/Movement/MoveCamera.cs"
 "Assets/Scripts/Movement/PlayerCam.cs"
 "Assets/Scripts/Movement/PlayerMovement.cs"
+"Assets/Scripts/Movement/StairClimb.cs"
 "Assets/Scripts/NewBehaviourScript.cs"
 "Assets/Scripts/OutLine.cs"
 "Assets/Scripts/Throwing.cs"
-"Assets/StairClimb.cs"
-"Assets/Tower.cs"
+"Assets/Scripts/Tower.cs"
 -langversion:9.0
 
 /deterministic
