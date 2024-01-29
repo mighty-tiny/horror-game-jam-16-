@@ -35,6 +35,8 @@ public class Dialogue : MonoBehaviour
     [Header("SoundStory")]
     public AudioSource OpenDoor;
     public AudioSource Knock;
+    public AudioSource Steps;
+
     [Header("Tasks")]
     public GameObject Task1;
     // Start is called before the first frame update
@@ -187,6 +189,10 @@ public class Dialogue : MonoBehaviour
         //textcomponent.text = "[Sleeping]";
         Teddy = true;
         You = false;
+        var i = Instantiate(Steps, transform.position, Quaternion.identity);
+        BlackScreen.SetActive(true);
+        Invoke("BlackOff", 2);
+        Destroy(i, 2);
     }
     private void PlayDialogueSound(int currentDisplayedCharacterCount)
     {
@@ -204,6 +210,10 @@ public class Dialogue : MonoBehaviour
         {
             Phase1();
         }
+    }
+    public void BlackOff()
+    {
+        BlackScreen.SetActive(false);
     }
 
     //IEnumerator FadeOut()
