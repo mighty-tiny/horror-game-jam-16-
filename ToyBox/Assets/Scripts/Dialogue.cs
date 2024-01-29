@@ -14,7 +14,7 @@ public class Dialogue : MonoBehaviour
     [Header("GameObjects")]
     public GameObject DialogueWindow;
     public GameObject BlackScreen;
-
+    public GameObject TeddyObj;
     [Header("Preferences")]
     public float speed;
     private int index;
@@ -22,6 +22,7 @@ public class Dialogue : MonoBehaviour
     public bool Teddy;
     public bool You;
     public bool Soldier;
+    public bool Skipable;
     bool clickable;
     [Header("Sound")]
     private AudioSource audioSource;
@@ -51,7 +52,7 @@ public class Dialogue : MonoBehaviour
         You = true;
         Teddy = false;
         StartDialogue();
-
+        Skipable = true;
     }
     private void Update()
     {
@@ -78,7 +79,7 @@ public class Dialogue : MonoBehaviour
                 textcomponent.text = lines[index];
             }
         }
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && Skipable)
         {
             Skip();
         }
@@ -180,7 +181,7 @@ public class Dialogue : MonoBehaviour
     {
         Task1.SetActive(true);
 
-        PlayerMovement.CantControl = false;
+        
         DialogueWindow.SetActive(false);
         textcomponent.text = string.Empty;
         namecomponent.text = "Teddy";
@@ -191,6 +192,8 @@ public class Dialogue : MonoBehaviour
         You = false;
         var i = Instantiate(Steps, transform.position, Quaternion.identity);
         BlackScreen.SetActive(true);
+
+        TeddyObj.SetActive(false);
         Invoke("BlackOff", 2);
         Destroy(i, 2);
     }
@@ -209,11 +212,14 @@ public class Dialogue : MonoBehaviour
         if (index < 14)
         {
             Phase1();
+            Skipable = false;
+
         }
     }
     public void BlackOff()
     {
         BlackScreen.SetActive(false);
+        PlayerMovement.CantControl = false;
     }
 
     //IEnumerator FadeOut()
