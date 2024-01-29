@@ -58,6 +58,11 @@ public class PlayerMovement : MonoBehaviour
             rb.drag = groundDrag;
         else
             rb.drag = 0;
+
+        if (Input.GetKeyDown(Key) && Tower.towered)
+        {
+            transform.position = new Vector3(0, 10, 9);
+        }
     }
 
     private void FixedUpdate()

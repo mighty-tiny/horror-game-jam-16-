@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Tower : MonoBehaviour
 {
-    bool towered;
+    static public bool towered;
     public GameObject cam;
     public GameObject text;
     [Header("Keybinds")]
@@ -18,11 +18,7 @@ public class Tower : MonoBehaviour
         {
             towered = true;
             outline.enabled = true;
-            if (Input.GetKeyDown(Key))
-            {
-                cam.transform.position = new Vector4(7.44f, 17.81f, 12.4f, 0);
-                transform.position = new Vector4(7.44f, 17.81f, 12.4f, 0);
-            }
+            
 
         }
         else
