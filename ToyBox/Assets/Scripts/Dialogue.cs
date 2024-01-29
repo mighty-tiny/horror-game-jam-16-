@@ -11,10 +11,13 @@ public class Dialogue : MonoBehaviour
     [Header("Story")]
     public GameObject[] berries;
     private bool gathered;
-    [Header("GameObjects")]
+    [Header("GameObjectsUI")]
     public GameObject DialogueWindow;
     public GameObject BlackScreen;
+    [Header("GameObjects")]
     public GameObject TeddyObj;
+    public GameObject TeddyObjCave;
+    public GameObject ;
     [Header("Preferences")]
     public float speed;
     private int index;
