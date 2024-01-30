@@ -14,10 +14,13 @@ public class Dialogue : MonoBehaviour
     [Header("GameObjectsUI")]
     public GameObject DialogueWindow;
     public GameObject BlackScreen;
+
     [Header("GameObjects")]
     public GameObject TeddyObj;
     public GameObject TeddyObjCave;
-    public GameObject Obj;
+    public GameObject printObj;
+    public GameObject Cap;
+
     [Header("Preferences")]
     public float speed;
     private int index;
@@ -195,7 +198,7 @@ public class Dialogue : MonoBehaviour
         You = false;
         var i = Instantiate(Steps, transform.position, Quaternion.identity);
         BlackScreen.SetActive(true);
-
+        printObj.SetActive(true);
         TeddyObj.SetActive(false);
         Invoke("BlackOff", 2);
         Destroy(i, 2);

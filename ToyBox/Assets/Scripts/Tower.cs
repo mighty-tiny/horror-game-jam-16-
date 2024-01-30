@@ -14,6 +14,7 @@ public class Tower : MonoBehaviour
     public Transform TowerPos;
     public static bool Won;
     public GameObject[] Soldiers;
+    public GameObject Cap;
     private void Start()
     {
         Won = false;
@@ -48,9 +49,10 @@ public class Tower : MonoBehaviour
             text.SetActive(true);
             towered = false;
         }
-        if (Won)
+        if (!Soldiers[0].activeInHierarchy && !Soldiers[0].activeInHierarchy && !Soldiers[0].activeInHierarchy && !Won)
         {
-
+            Cap.SetActive(true);
+            Won = true;
         }
     }
 }
