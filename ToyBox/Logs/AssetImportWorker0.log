@@ -379,3 +379,35 @@ Received Import Request.
 Start importing Assets/Prefabs/Bear Paw Print.prefab using Guid(66c3e32b38dc15d4ea3ebabd2b1770be) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f045d8d49a0375fefee66b193ec4835c') in 0.006623 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 60
+========================================================================
+Received Import Request.
+  Time since last request: 405.345035 seconds.
+  path: Assets/Models/beehive.fbx
+  artifactKey: Guid(9a602b309035dd345bb1939149206348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/beehive.fbx using Guid(9a602b309035dd345bb1939149206348) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a0065940b50b220b8c4ba5186416121') in 0.068328 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 10
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/Models/toy soldier.prefab
+  artifactKey: Guid(7044a486c5d1dc1439826e42f54da686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/toy soldier.prefab using Guid(7044a486c5d1dc1439826e42f54da686) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e10726045ead23846442a2df2fa3e335') in 0.018522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Models/soldier.obj
+  artifactKey: Guid(1da80282596ddbf4b9f3fb8a383114ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/soldier.obj using Guid(1da80282596ddbf4b9f3fb8a383114ca) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e300963c52861cc29502b221bdc72001') in 0.030907 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 27.603074 seconds.
+  path: Assets/Models/rocks2.fbx
+  artifactKey: Guid(f8031e06dc4cd0b4e87d636cb585ba1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/rocks2.fbx using Guid(f8031e06dc4cd0b4e87d636cb585ba1d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f65198e5e3c6e0138868d9d4d5394dad') in 0.030824 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 16

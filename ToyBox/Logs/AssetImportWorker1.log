@@ -267,3 +267,27 @@ Received Import Request.
 Start importing Assets/Particles/ParticleBlow.prefab using Guid(7fa94e6884f8436409e29cf4501db6ed) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba2c58092a546f3d9dbd8047889ecf91') in 0.013888 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 7
+========================================================================
+Received Import Request.
+  Time since last request: 461.278180 seconds.
+  path: Assets/Models/pot.obj
+  artifactKey: Guid(0df79b073cf17394c8c1a6a30d5ebff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/pot.obj using Guid(0df79b073cf17394c8c1a6a30d5ebff3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '921d8501de8e14c259cbca5aa987abb1') in 0.062150 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 11
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/Models/soldier.png
+  artifactKey: Guid(99aee44f5b349034a8c969a8453bdc60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/soldier.png using Guid(99aee44f5b349034a8c969a8453bdc60) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9da82789a477a486e29af20a686a14fb') in 0.024137 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/Models/pot.png
+  artifactKey: Guid(861efb6dcc8e9a24fa4a05b828e6b639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/pot.png using Guid(861efb6dcc8e9a24fa4a05b828e6b639) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff64db1817bbdd0112d06ef4a0e9a782') in 0.021227 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
