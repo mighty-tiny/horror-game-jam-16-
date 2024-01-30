@@ -41,6 +41,7 @@ public class Throwing : MonoBehaviour
             Bee.gameObject.SetActive(true);
             ClickE.SetActive(true);
             Slider.gameObject.SetActive(true);
+            totalThrows += 1;
         }
     }
 

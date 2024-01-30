@@ -29,7 +29,7 @@ public class Dialogue : MonoBehaviour
     public bool You;
     public bool Soldier;
     public bool Skipable;
-    bool clickable;
+    private bool clickable;
     [Header("Sound")]
     private AudioSource audioSource;
     private DialogueAudioPlayer youDialogueAudioPlayer;
@@ -56,9 +56,11 @@ public class Dialogue : MonoBehaviour
         teddyDialogueAudioPlayer = new DialogueAudioPlayer(TeddySoundClip.gameObject);
 
         You = true;
+        speed = 0.1f;
         Teddy = false;
         StartDialogue();
         Skipable = true;
+        
     }
     private void Update()
     {
@@ -72,18 +74,28 @@ public class Dialogue : MonoBehaviour
             Gathered();
 
         }
-
-        if (Input.GetMouseButtonDown(0) && clickable)
+        if (textcomponent.text == lines[index] && index == 11)
         {
-            if (textcomponent.text == lines[index])
+            
+            NextLine();
+        }
+
+        else if (Input.GetMouseButtonDown(0) && clickable && index != 11)
+        {
+            if (textcomponent.text == lines[index] )
             {
                 NextLine();
+                
             }
             else
             {
                 StopAllCoroutines();
                 textcomponent.text = lines[index];
             }
+        }
+        else if (Input.GetMouseButtonDown(0) && index == 11)
+        {
+            speed /= 2;
         }
         if (Input.GetKeyDown(KeyCode.Space) && Skipable)
         {
@@ -187,9 +199,10 @@ public class Dialogue : MonoBehaviour
     {
         Task1.SetActive(true);
 
-        
+        Invoke("BlackOff", 2);
         DialogueWindow.SetActive(false);
-        textcomponent.text = string.Empty;
+        StopAllCoroutines();
+        textcomponent.text = lines[index];
         namecomponent.text = "Teddy";
         BlackScreen.SetActive(false);
         clickable = false;
@@ -198,7 +211,7 @@ public class Dialogue : MonoBehaviour
         You = false;
         var i = Instantiate(Steps, transform.position, Quaternion.identity);
         BlackScreen.SetActive(true);
-        printObj.SetActive(true);
+        //printObj.SetActive(true);
         TeddyObj.SetActive(false);
         Invoke("BlackOff", 2);
         Destroy(i, 2);
