@@ -216,6 +216,10 @@ public class Dialogue : MonoBehaviour
         Invoke("BlackOff", 2);
         Destroy(i, 2);
     }
+    void Phase2()
+    {
+
+    }
     private void PlayDialogueSound(int currentDisplayedCharacterCount)
     {
         if (currentDisplayedCharacterCount % FrequencyLevel == 0)

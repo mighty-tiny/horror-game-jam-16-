@@ -6,6 +6,8 @@ public class DetectTarget : MonoBehaviour
 {
     public GameObject beeobj;
     public GameObject Bucket;
+    [Header("Particles")]
+    public GameObject ParticleBlow;
     //float f;
     //public GameObject[] soldiers;
     private void OnTriggerEnter(Collider other)
@@ -13,7 +15,8 @@ public class DetectTarget : MonoBehaviour
         if (other.gameObject.CompareTag("Bee") )
         {
             //f = ((float)Bucket.position.y);
-            beeobj.SetActive(true);
+            Instantiate(ParticleBlow, transform.position, Quaternion.identity);
+            Bucket.SetActive(false);
             //do
             //{
             //    f -= 0.1f;

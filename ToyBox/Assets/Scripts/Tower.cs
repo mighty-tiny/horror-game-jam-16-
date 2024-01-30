@@ -15,6 +15,8 @@ public class Tower : MonoBehaviour
     public static bool Won;
     public GameObject[] Soldiers;
     public GameObject Cap;
+    [Header("Particles")]
+    public GameObject ParticleBlow;
     private void Start()
     {
         Won = false;
@@ -53,6 +55,7 @@ public class Tower : MonoBehaviour
         {
             Cap.SetActive(true);
             Won = true;
+            
         }
     }
 }
