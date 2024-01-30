@@ -12,6 +12,12 @@ public class Tower : MonoBehaviour
     public Outline outline;
     //public GameObject[] soldiers;
     public Transform TowerPos;
+    public static bool Won;
+    public GameObject[] Soldiers;
+    private void Start()
+    {
+        Won = false;
+    }
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Tower"))
@@ -41,6 +47,10 @@ public class Tower : MonoBehaviour
         {
             text.SetActive(true);
             towered = false;
+        }
+        if (Won)
+        {
+
         }
     }
 }

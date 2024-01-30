@@ -17,7 +17,7 @@ public class Dialogue : MonoBehaviour
     [Header("GameObjects")]
     public GameObject TeddyObj;
     public GameObject TeddyObjCave;
-    public GameObject ;
+    public GameObject Obj;
     [Header("Preferences")]
     public float speed;
     private int index;
