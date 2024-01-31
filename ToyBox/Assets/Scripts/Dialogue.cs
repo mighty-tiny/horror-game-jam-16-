@@ -65,15 +65,11 @@ public class Dialogue : MonoBehaviour
     private void Update()
     {
         
-        if (!berries[0].activeInHierarchy && !berries[1].activeInHierarchy && !berries[2].activeInHierarchy)
-        {
-            gathered = true;
-        }
-        if (gathered)
+        if (!berries[0].activeInHierarchy && !berries[1].activeInHierarchy && !berries[2].activeInHierarchy && !gathered)
         {
             Gathered();
-
         }
+        
         if (textcomponent.text == lines[index] && index == 11)
         {
             
@@ -95,7 +91,7 @@ public class Dialogue : MonoBehaviour
         }
         else if (Input.GetMouseButtonDown(0) && index == 11)
         {
-            speed /= 2;
+            speed /= 1.1f;
         }
         if (Input.GetKeyDown(KeyCode.Space) && Skipable)
         {
@@ -109,7 +105,7 @@ public class Dialogue : MonoBehaviour
         textcomponent.text = "[Sleeping]";
         DialogueWindow.SetActive(true);
         index = 15;
-        gathered = false;
+        gathered = true;
     }
     void StartDialogue()
     {
@@ -211,7 +207,7 @@ public class Dialogue : MonoBehaviour
         You = false;
         var i = Instantiate(Steps, transform.position, Quaternion.identity);
         BlackScreen.SetActive(true);
-        //printObj.SetActive(true);
+        printObj.SetActive(true);
         TeddyObj.SetActive(false);
         Invoke("BlackOff", 2);
         Destroy(i, 2);
