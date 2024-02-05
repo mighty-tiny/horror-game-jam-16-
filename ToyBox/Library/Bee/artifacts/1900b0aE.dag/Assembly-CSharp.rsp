@@ -367,6 +367,7 @@
 "Assets/Scripts/Movement/StairClimb.cs"
 "Assets/Scripts/NewBehaviourScript.cs"
 "Assets/Scripts/OutLine.cs"
+"Assets/Scripts/Screamer.cs"
 "Assets/Scripts/Throwing.cs"
 "Assets/Scripts/Tower.cs"
 -langversion:9.0

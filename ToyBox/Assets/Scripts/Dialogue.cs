@@ -209,7 +209,7 @@ public class Dialogue : MonoBehaviour
         BlackScreen.SetActive(true);
         printObj.SetActive(true);
         TeddyObj.SetActive(false);
-        Invoke("BlackOff", 2);
+        //Invoke("BlackOff", 2);
         Destroy(i, 2);
     }
     void Phase2()
