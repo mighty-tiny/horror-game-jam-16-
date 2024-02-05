@@ -50,7 +50,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 919132149155446097, guid: 0df79b073cf17394c8c1a6a30d5ebff3, type: 3}
       propertyPath: m_Name
-      value: pot
+      value: potPickup
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -102,7 +102,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bush: 0
+  pot: 1
   particle: {fileID: 2521247536532384905, guid: 053a196847b089c48a4a26ce9fd2ba65, type: 3}
+  handObj: {fileID: 0}
 --- !u!65 &4880425029329239386
 BoxCollider:
   m_ObjectHideFlags: 0
