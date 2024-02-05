@@ -18,8 +18,10 @@ public class TowerAndWatering : MonoBehaviour
     public GameObject Cap;
     [Header("Particles")]
     public GameObject ParticleBlow;
+    public GameObject ParticleWater;
     [Header("Watering")]
-    public static bool potPickedUp;
+    bool potPickedUp;
+    public GameObject pot;
 
     private void Start()
     {
