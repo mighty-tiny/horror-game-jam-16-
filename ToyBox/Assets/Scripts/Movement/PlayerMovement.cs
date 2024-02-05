@@ -59,7 +59,7 @@ public class PlayerMovement : MonoBehaviour
         else
             rb.drag = 0;
 
-        if (Input.GetKeyDown(Key) && Tower.towered)
+        if (Input.GetKeyDown(Key) && TowerAndWatering.towered)
         {
             transform.position = new Vector3(0, 10, 9);
         }

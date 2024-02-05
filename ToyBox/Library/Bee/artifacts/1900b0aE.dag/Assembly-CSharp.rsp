@@ -369,7 +369,7 @@
 "Assets/Scripts/OutLine.cs"
 "Assets/Scripts/Screamer.cs"
 "Assets/Scripts/Throwing.cs"
-"Assets/Scripts/Tower.cs"
+"Assets/Scripts/TowerAndWatering.cs"
 -langversion:9.0
 
 /deterministic
