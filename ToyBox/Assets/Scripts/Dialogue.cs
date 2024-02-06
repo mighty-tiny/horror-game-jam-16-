@@ -45,9 +45,9 @@ public class Dialogue : MonoBehaviour
     public AudioSource Steps;
 
     [Header("Tasks")]
-    public GameObject Task1;
+    public GameObject[] Task;
     // Start is called before the first frame update
-    void Start()
+    void Awake()
     {
         textcomponent.text = string.Empty;
         audioSource = gameObject.AddComponent<AudioSource>();
@@ -100,12 +100,10 @@ public class Dialogue : MonoBehaviour
     }
     void Gathered()
     {
-        clickable = true;
-        Task1.SetActive(false);
-        textcomponent.text = "[Sleeping]";
-        DialogueWindow.SetActive(true);
-        index = 15;
+        Task[0].SetActive(false);
+        Task[1].SetActive(true);
         gathered = true;
+        Phase2();
     }
     void StartDialogue()
     {
@@ -193,18 +191,18 @@ public class Dialogue : MonoBehaviour
     }
     void Phase1()
     {
-        Task1.SetActive(true);
+        Task[0].SetActive(true);
 
         Invoke("BlackOff", 2);
         DialogueWindow.SetActive(false);
         StopAllCoroutines();
         textcomponent.text = lines[index];
-        namecomponent.text = "Teddy";
+        namecomponent.text = "You";
         BlackScreen.SetActive(false);
         clickable = false;
         //textcomponent.text = "[Sleeping]";
-        Teddy = true;
-        You = false;
+        Teddy = false;
+        You = true;
         var i = Instantiate(Steps, transform.position, Quaternion.identity);
         BlackScreen.SetActive(true);
         printObj.SetActive(true);
@@ -215,6 +213,10 @@ public class Dialogue : MonoBehaviour
     void Phase2()
     {
 
+        textcomponent.text = "Now I should go to Teddy's cave";
+        DialogueWindow.SetActive(true);
+        index = 15;
+        clickable = true;
     }
     private void PlayDialogueSound(int currentDisplayedCharacterCount)
     {
