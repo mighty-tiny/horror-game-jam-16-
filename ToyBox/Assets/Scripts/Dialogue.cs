@@ -46,6 +46,8 @@ public class Dialogue : MonoBehaviour
 
     [Header("Tasks")]
     public GameObject[] Task;
+
+    bool used;
     // Start is called before the first frame update
     void Awake()
     {
@@ -182,7 +184,7 @@ public class Dialogue : MonoBehaviour
             Teddy = false;
             You = true;
         }
-        else if (index == 14)
+        else if (index == 14 && !used)
         {
             Phase1();
         }
@@ -195,7 +197,7 @@ public class Dialogue : MonoBehaviour
 
         Invoke("BlackOff", 2);
         DialogueWindow.SetActive(false);
-        StopAllCoroutines();
+        //StopAllCoroutines();
         textcomponent.text = lines[index];
         namecomponent.text = "You";
         BlackScreen.SetActive(false);
@@ -209,14 +211,14 @@ public class Dialogue : MonoBehaviour
         TeddyObj.SetActive(false);
         //Invoke("BlackOff", 2);
         Destroy(i, 2);
+        used = true;
     }
     void Phase2()
     {
-
-        textcomponent.text = "Now I should go to Teddy's cave";
-        DialogueWindow.SetActive(true);
-        index = 15;
         clickable = true;
+        //textcomponent.text = "Now I should go to Teddy's cave";
+        DialogueWindow.SetActive(true);
+        
     }
     private void PlayDialogueSound(int currentDisplayedCharacterCount)
     {
