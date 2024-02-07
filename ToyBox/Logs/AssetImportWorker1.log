@@ -299,3 +299,67 @@ Received Import Request.
 Start importing Assets/Prefabs/beehive.prefab using Guid(689bf7d89bf65564fa504c5e3b4c1996) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'cae9a0cba4c34feeaa67c904866bd3e3') in 0.016464 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 20
+========================================================================
+Received Import Request.
+  Time since last request: 1306.667428 seconds.
+  path: Assets/Materials/Blockout House Roof.mat
+  artifactKey: Guid(63c1b315bbf7aed45b8e87f818c71eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Blockout House Roof.mat using Guid(63c1b315bbf7aed45b8e87f818c71eb9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '28b28b23eb02f92caa0dfb454fc7649c') in 0.016665 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/Materials/NewLayer.terrainlayer
+  artifactKey: Guid(e8dc183d60e9eb948b9a36da82ba3acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/NewLayer.terrainlayer using Guid(e8dc183d60e9eb948b9a36da82ba3acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0eff58c82f96863fae32bc4a15c9fa') in 0.039383 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Materials/Blue.mat
+  artifactKey: Guid(05d0c76fe708fc9409971c8470d654f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Blue.mat using Guid(05d0c76fe708fc9409971c8470d654f5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0ca7fafb537adf862bdfea31e34d2bb0') in 0.017404 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 2.095377 seconds.
+  path: Assets/Sounds/Lower_Dialogue_Sound.prefab
+  artifactKey: Guid(3bd8c4bb4fabb8e48b3faec4876841d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Lower_Dialogue_Sound.prefab using Guid(3bd8c4bb4fabb8e48b3faec4876841d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca64a90ec59a577549326ec82826d68b') in 0.005804 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.005082 seconds.
+  path: Assets/Sounds/shagi-begom-po-lesu.prefab
+  artifactKey: Guid(c7964bdca14835341b0e9df81d34c833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/shagi-begom-po-lesu.prefab using Guid(c7964bdca14835341b0e9df81d34c833) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '004b37cdc318305aeb4a7e50931acd88') in 0.008256 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.000113 seconds.
+  path: Assets/Sounds/Teddys_Voice.wav
+  artifactKey: Guid(ce2091263c168a34b90441f0e4e5959a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Teddys_Voice.wav using Guid(ce2091263c168a34b90441f0e4e5959a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca83767ffcf225efc18c158e41e207e7') in 0.040126 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.827490 seconds.
+  path: Assets/Scenes/ToyWorld/Lightmap-0_comp_dir.png
+  artifactKey: Guid(586189980a1120c4b89ea5fde11a77db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ToyWorld/Lightmap-0_comp_dir.png using Guid(586189980a1120c4b89ea5fde11a77db) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1d7caddf5f4d1de4aa73d7591e7f1562') in 0.035024 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000273 seconds.
+  path: Assets/Scenes/ToyWorld/ReflectionProbe-0.exr
+  artifactKey: Guid(34a09a7a51b46144f9710288bbb9774e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/ToyWorld/ReflectionProbe-0.exr using Guid(34a09a7a51b46144f9710288bbb9774e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3e94ea476a79c9b4a3ada7d2e735dbc6') in 0.031729 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
