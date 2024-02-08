@@ -8,6 +8,7 @@ public class Dialogue : MonoBehaviour
     public TextMeshProUGUI textcomponent;
     public TextMeshProUGUI namecomponent;
     public string[] lines;
+    public string[] lines2;
     [Header("Story")]
     public GameObject[] berries;
     private bool gathered;
@@ -24,6 +25,7 @@ public class Dialogue : MonoBehaviour
     [Header("Preferences")]
     public float speed;
     private int index;
+    private int index2;
     [SerializeField] private GameObject Current;
     public bool Teddy;
     public bool You;
@@ -62,6 +64,7 @@ public class Dialogue : MonoBehaviour
         Teddy = false;
         StartDialogue();
         Skipable = true;
+        DetectTarget.bearDialogue = false;
         
     }
     private void Update()
@@ -95,6 +98,7 @@ public class Dialogue : MonoBehaviour
         {
             speed /= 1.1f;
         }
+
         if (Input.GetKeyDown(KeyCode.Space) && Skipable)
         {
             Skip();
@@ -114,9 +118,33 @@ public class Dialogue : MonoBehaviour
         index = 0;
         StartCoroutine(TypeLineYou());
     }
+    void StartDialogue2()
+    {
+        clickable = true;
+        DialogueWindow.SetActive(true);
+        index2 = 0;
+        StartCoroutine(TypeLineYou2());
+    }
     IEnumerator TypeLineYou()
     {
         foreach (char c in lines[index].ToCharArray())
+        {
+            PlayDialogueSound(textcomponent.text.Length);
+            textcomponent.text += c;
+            if (You)
+            {
+                youDialogueAudioPlayer.Play();
+            }
+            else if (Teddy)
+            {
+                teddyDialogueAudioPlayer.Play();
+            }
+            yield return new WaitForSeconds(speed);
+        }
+    }
+    IEnumerator TypeLineYou2()
+    {
+        foreach (char c in lines[index2].ToCharArray())
         {
             PlayDialogueSound(textcomponent.text.Length);
             textcomponent.text += c;
@@ -184,6 +212,10 @@ public class Dialogue : MonoBehaviour
             Teddy = false;
             You = true;
         }
+        else if (index == 12)
+        {
+            speed = 0.1f;
+        }
         else if (index == 14 && !used)
         {
             Phase1();
@@ -216,9 +248,18 @@ public class Dialogue : MonoBehaviour
     void Phase2()
     {
         clickable = true;
-        //textcomponent.text = "Now I should go to Teddy's cave";
+        index = 14;
+        textcomponent.text = "Now I should go to Teddy's cave";
         DialogueWindow.SetActive(true);
         
+    }
+    public void Phase3()
+    {
+        clickable = true;
+        index = 0;
+        DialogueWindow.SetActive(true);
+
+        StartDialogue2();
     }
     private void PlayDialogueSound(int currentDisplayedCharacterCount)
     {
@@ -238,12 +279,19 @@ public class Dialogue : MonoBehaviour
             Skipable = false;
 
         }
+        else if (index == 14)
+        {
+            clickable = false;
+            DialogueWindow.SetActive(false);
+            Skipable = false;
+        }
     }
     public void BlackOff()
     {
         BlackScreen.SetActive(false);
         PlayerMovement.CantControl = false;
     }
+    
 
     //IEnumerator FadeOut()
     //{
