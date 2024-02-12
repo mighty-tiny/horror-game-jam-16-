@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/ToyWorld.unity
+- path: Assets/Scenes/HorrorWorld.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
