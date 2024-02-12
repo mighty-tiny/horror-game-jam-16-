@@ -409,3 +409,275 @@ Received Import Request.
 Start importing Assets/Prefabs/Miltary Base floor.prefab using Guid(4affffb6ec8f83c4ab1ba56e3c8e3b09) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '252cfb2bc5fc59c1f96293cec51b82fb') in 0.011259 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 1023.542323 seconds.
+  path: Assets/Sounds/breathing.mp3
+  artifactKey: Guid(607400d1aa726ba44bb6266caa89d6fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/breathing.mp3 using Guid(607400d1aa726ba44bb6266caa89d6fc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff1c2c27eaf81c03c85e7031bf9432cd') in 0.011926 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.023279 seconds.
+  path: Assets/Sounds/ed35ff6bc36a8d3-1.mp3
+  artifactKey: Guid(d6d8f535727a1104a821e03e133a0eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/ed35ff6bc36a8d3-1.mp3 using Guid(d6d8f535727a1104a821e03e133a0eea) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5863c7478d0af1f9df8807436fbd2664') in 0.009890 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000122 seconds.
+  path: Assets/Sounds/kick.mp3
+  artifactKey: Guid(477161e916cb1e54ea6867675e210827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/kick.mp3 using Guid(477161e916cb1e54ea6867675e210827) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '279e686df3328eccf57224bad788e18f') in 0.009744 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000099 seconds.
+  path: Assets/Sounds/Lower_Dialogue_Sound.prefab
+  artifactKey: Guid(3bd8c4bb4fabb8e48b3faec4876841d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Lower_Dialogue_Sound.prefab using Guid(3bd8c4bb4fabb8e48b3faec4876841d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ca64a90ec59a577549326ec82826d68b') in 0.001671 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 5
+========================================================================
+Received Import Request.
+  Time since last request: 0.002128 seconds.
+  path: Assets/Sounds/razletayuschayasya-v-storonyi-krov-ot-udara.mp3
+  artifactKey: Guid(fecf619a1b6ab034cbffe155b886502b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/razletayuschayasya-v-storonyi-krov-ot-udara.mp3 using Guid(fecf619a1b6ab034cbffe155b886502b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a4a207b18a7b68d8ac1ab77ae3064738') in 0.009940 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000134 seconds.
+  path: Assets/Sounds/scream1.ogg
+  artifactKey: Guid(3a3e0c3108ee6454cb9a04174b6528a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/scream1.ogg using Guid(3a3e0c3108ee6454cb9a04174b6528a0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd22b285289d8f6b389b6268cdfda0468') in 0.010141 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.002866 seconds.
+  path: Assets/Sounds/Teddys_Voice_2.mp3
+  artifactKey: Guid(cd815270dbaf09e4382466bb651dacf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Sounds/Teddys_Voice_2.mp3 using Guid(cd815270dbaf09e4382466bb651dacf9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9897f9857074c559e00dbd80b701edd') in 0.010034 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 2.433848 seconds.
+  path: Assets/Scenes/HorrorWorld.unity
+  artifactKey: Guid(b1e7cfa10342f8e42acef35a23039bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/HorrorWorld.unity using Guid(b1e7cfa10342f8e42acef35a23039bcc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '77cd796ec2a481e0c9d40d4a389ebce7') in 0.000521 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 1700.275221 seconds.
+  path: Assets/Prefabs
+  artifactKey: Guid(fcaacd73a39e84f4f81729fc6bfafab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs using Guid(fcaacd73a39e84f4f81729fc6bfafab3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6263b1da1910c08c5ee4e5782db22939') in 0.000683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 29.649462 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '78fcf71f8b0bee06ad2eca966da26c0e') in 0.004225 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 4
+========================================================================
+Received Import Request.
+  Time since last request: 6.659902 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bbf743ab4771ab086c8c03da2f0fd8e2') in 0.015821 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 7.377821 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3d46774f1d13989ef9e63fd402b1966d') in 0.014419 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 3.287445 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b4d173d9cb5211b84be2b4e5a10df6b8') in 0.013203 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 9
+========================================================================
+Received Import Request.
+  Time since last request: 6.141890 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c85dcba6dfd0bfb6906bd9e19c9835b') in 0.011522 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 4.081226 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aec70d4dfbf4a4a2189bf58cfd6876a9') in 0.011201 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 3.720410 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fc46971580dd22dd58ad848a9d2b15d') in 0.011026 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 2.463340 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '966af48b28f97cb22066a18bef84a65d') in 0.010508 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 3.069962 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c3c7afd04dc6a54b1bb896528a72a85') in 0.010204 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 4.323713 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3368fbb419187b64e715f963926aba0e') in 0.011477 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 14
+========================================================================
+Received Import Request.
+  Time since last request: 2.039744 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9a67323d7ab6e62489c9eb1098b8974b') in 0.011677 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 3.493065 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47b97ee1192991721f4d0223182fd042') in 0.010642 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 3.507424 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e6be7847fb931575c7b8eb87afb8ea8') in 0.011219 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 4.480559 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '763acc2a07bb64234700e0996142fbf7') in 0.012296 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 2.858142 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d0b440d9f958321ffe441978a5a927f') in 0.010897 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 5.742002 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '790e24675ed6c5226ddbb8af72a33d73') in 0.013102 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 2.626834 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5418941905e544dc780618fd21584c1d') in 0.010824 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 1.620818 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2eda57d4f8936e1f8fb4e49260c06331') in 0.011976 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 3.102844 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba4fccd717977a5a4fedf513509450ca') in 0.010661 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 3.450392 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '95dd1ccb7e12c93e4ebbf9d8b29e6a27') in 0.011192 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 29
+========================================================================
+Received Import Request.
+  Time since last request: 8.377339 seconds.
+  path: Assets/Materials/Blockout Grass.mat
+  artifactKey: Guid(6a8580ad07741944c981765940a19c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Blockout Grass.mat using Guid(6a8580ad07741944c981765940a19c90) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a5b0e0662cf053ac06b9b7e7aa6ab15a') in 0.012957 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 0.000057 seconds.
+  path: Assets/Materials/Blockout Tree Trunk.asset
+  artifactKey: Guid(1c0eb81a2e8c7ae4da9045509354277d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Blockout Tree Trunk.asset using Guid(1c0eb81a2e8c7ae4da9045509354277d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eb1d481f70f903188035de0244b2747c') in 0.035570 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/Materials/NewLayer.terrainlayer
+  artifactKey: Guid(e8dc183d60e9eb948b9a36da82ba3acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/NewLayer.terrainlayer using Guid(e8dc183d60e9eb948b9a36da82ba3acf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f0eff58c82f96863fae32bc4a15c9fa') in 0.019422 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 2
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/Materials/Stone Cave Blockout.mat
+  artifactKey: Guid(f3bfb70fe9dd5a5428b3da0230cae93d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Materials/Stone Cave Blockout.mat using Guid(f3bfb70fe9dd5a5428b3da0230cae93d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c2b11b6afbcdd3b17fb41b3a150ee812') in 0.011327 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 53.434430 seconds.
+  path: Assets/Prefabs/ToyBoxWinCondition.prefab
+  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c93e2556c1e9ce4d7a769ea421e0f2bf') in 0.012289 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 36
