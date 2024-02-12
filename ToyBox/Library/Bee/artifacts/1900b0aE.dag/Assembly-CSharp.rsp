@@ -361,6 +361,7 @@
 "Assets/Scripts/DialogueAudioPlayer.cs"
 "Assets/Scripts/EyeBlink.cs"
 "Assets/Scripts/Gathering.cs"
+"Assets/Scripts/LookAT.cs"
 "Assets/Scripts/Movement/MoveCamera.cs"
 "Assets/Scripts/Movement/PlayerCam.cs"
 "Assets/Scripts/Movement/PlayerMovement.cs"

@@ -8,12 +8,12 @@ public class Dialogue : MonoBehaviour
     public TextMeshProUGUI textcomponent;
     public TextMeshProUGUI namecomponent;
     public string[] lines;
-    public string[] lines2;
     [Header("Story")]
     public GameObject[] berries;
     private bool gathered;
     [Header("GameObjectsUI")]
     public GameObject DialogueWindow;
+    public GameObject[] DialogueManager;
     public GameObject BlackScreen;
 
     [Header("GameObjects")]
@@ -22,10 +22,11 @@ public class Dialogue : MonoBehaviour
     public GameObject printObj;
     public GameObject Cap;
 
+    public GameObject TeddyHeadScary;
+    public GameObject TeddyHeadNorm;
     [Header("Preferences")]
     public float speed;
     private int index;
-    private int index2;
     [SerializeField] private GameObject Current;
     public bool Teddy;
     public bool You;
@@ -49,7 +50,16 @@ public class Dialogue : MonoBehaviour
     [Header("Tasks")]
     public GameObject[] Task;
 
+
+
     bool used;
+    bool dialogued;
+
+    [Header("Horror")]
+    private bool horror;
+    public GameObject bloodParticle;
+    public AudioSource screamBoy;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -103,6 +113,10 @@ public class Dialogue : MonoBehaviour
         {
             Skip();
         }
+        if (DetectTarget.bearDialogue && gathered)
+        {
+            Phase3();
+        }
     }
     void Gathered()
     {
@@ -118,33 +132,9 @@ public class Dialogue : MonoBehaviour
         index = 0;
         StartCoroutine(TypeLineYou());
     }
-    void StartDialogue2()
-    {
-        clickable = true;
-        DialogueWindow.SetActive(true);
-        index2 = 0;
-        StartCoroutine(TypeLineYou2());
-    }
     IEnumerator TypeLineYou()
     {
         foreach (char c in lines[index].ToCharArray())
-        {
-            PlayDialogueSound(textcomponent.text.Length);
-            textcomponent.text += c;
-            if (You)
-            {
-                youDialogueAudioPlayer.Play();
-            }
-            else if (Teddy)
-            {
-                teddyDialogueAudioPlayer.Play();
-            }
-            yield return new WaitForSeconds(speed);
-        }
-    }
-    IEnumerator TypeLineYou2()
-    {
-        foreach (char c in lines[index2].ToCharArray())
         {
             PlayDialogueSound(textcomponent.text.Length);
             textcomponent.text += c;
@@ -198,6 +188,12 @@ public class Dialogue : MonoBehaviour
             namecomponent.text = "Teddy";
             Teddy = true;
             You = false;
+            if (horror)
+            {
+                bloodParticle.SetActive(true);
+                screamBoy.Play();
+                
+            }
         }
         else if (index == 4)
         {
@@ -206,6 +202,7 @@ public class Dialogue : MonoBehaviour
             Teddy = false;
             You = false;
         }
+
         else if (index == 10)
         {
             namecomponent.text = "You";
@@ -219,6 +216,14 @@ public class Dialogue : MonoBehaviour
         else if (index == 14 && !used)
         {
             Phase1();
+        }
+
+
+        //PHASE3
+        else if (index == 3 && dialogued)
+        {
+            TeddyHeadScary.SetActive(true);
+            TeddyHeadNorm.SetActive(false);
         }
 
 
@@ -241,25 +246,26 @@ public class Dialogue : MonoBehaviour
         BlackScreen.SetActive(true);
         printObj.SetActive(true);
         TeddyObj.SetActive(false);
+        
         //Invoke("BlackOff", 2);
         Destroy(i, 2);
         used = true;
     }
     void Phase2()
     {
-        clickable = true;
-        index = 14;
-        textcomponent.text = "Now I should go to Teddy's cave";
-        DialogueWindow.SetActive(true);
         
+        DialogueManager[1].SetActive(true);
+        DialogueManager[0].SetActive(false);
+        clickable = true;
     }
     public void Phase3()
     {
+        dialogued = true;
+        DialogueManager[2].SetActive(true);
+        DialogueManager[1].SetActive(false);
         clickable = true;
-        index = 0;
-        DialogueWindow.SetActive(true);
+        DetectTarget.bearDialogue = false;
 
-        StartDialogue2();
     }
     private void PlayDialogueSound(int currentDisplayedCharacterCount)
     {
