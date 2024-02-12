@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using TMPro;
-
+using UnityEngine.SceneManagement;
 public class Dialogue : MonoBehaviour
 {
     [Header("Text")]
@@ -46,14 +46,13 @@ public class Dialogue : MonoBehaviour
     public AudioSource OpenDoor;
     public AudioSource Knock;
     public AudioSource Steps;
-
+    public AudioSource screamer;
     [Header("Tasks")]
     public GameObject[] Task;
 
 
 
     bool used;
-    bool dialogued;
 
     [Header("Horror")]
     private bool horror;
@@ -220,16 +219,24 @@ public class Dialogue : MonoBehaviour
 
 
         //PHASE3
-        if (index == 3 && dialogued)
+        if (index == 3 && DetectTarget.bearDialogue)
         {
-            namecomponent.text = "Teddy";
-            Teddy = true;
-            You = false;
-            TeddyHeadScary.SetActive(true);
-            TeddyHeadNorm.SetActive(false);
+            Phase4();
         }
 
 
+    }
+    void Phase4()
+    {
+        screamer.Play();
+        namecomponent.text = "Teddy";
+        TeddyHeadScary.SetActive(true);
+        TeddyHeadNorm.SetActive(false);
+        Invoke("HorrorScene", 0.2f);
+    }
+    void HorrorScene()
+    {
+        SceneManager.LoadScene("HorrorWorld");
     }
     void Phase1()
     {
@@ -256,19 +263,15 @@ public class Dialogue : MonoBehaviour
     }
     void Phase2()
     {
-        
         DialogueManager[1].SetActive(true);
         DialogueManager[0].SetActive(false);
         clickable = true;
     }
-    public void Phase3()
+    void Phase3()
     {
-        dialogued = true;
         DialogueManager[2].SetActive(true);
         DialogueManager[1].SetActive(false);
         clickable = true;
-        DetectTarget.bearDialogue = false;
-
     }
     private void PlayDialogueSound(int currentDisplayedCharacterCount)
     {
