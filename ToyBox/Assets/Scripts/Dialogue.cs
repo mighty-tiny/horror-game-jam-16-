@@ -220,8 +220,11 @@ public class Dialogue : MonoBehaviour
 
 
         //PHASE3
-        else if (index == 3 && dialogued)
+        if (index == 3 && dialogued)
         {
+            namecomponent.text = "Teddy";
+            Teddy = true;
+            You = false;
             TeddyHeadScary.SetActive(true);
             TeddyHeadNorm.SetActive(false);
         }
