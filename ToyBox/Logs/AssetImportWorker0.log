@@ -15,7 +15,7 @@ C:/Unity/Horror Game Jam 16/horror-game-jam-16-/ToyBox
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58399
+64411
 Successfully changed project path to: C:/Unity/Horror Game Jam 16/horror-game-jam-16-/ToyBox
 C:/Unity/Horror Game Jam 16/horror-game-jam-16-/ToyBox
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +49,12 @@ C:/Unity/Horror Game Jam 16/horror-game-jam-16-/ToyBox
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
-Player connection [11336] Host "[IP] 192.168.1.101 [Port] 0 [Flags] 2 [Guid] 852296674 [EditorId] 852296674 [Version] 1048832 [Id] WindowsEditor(7,Poseidon) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+Player connection [12576] Host "[IP] 192.168.1.101 [Port] 0 [Flags] 2 [Guid] 4067344958 [EditorId] 4067344958 [Version] 1048832 [Id] WindowsEditor(7,Poseidon) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
-Player connection [11336] Host "[IP] 192.168.1.101 [Port] 0 [Flags] 2 [Guid] 852296674 [EditorId] 852296674 [Version] 1048832 [Id] WindowsEditor(7,Poseidon) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+Player connection [12576] Host "[IP] 192.168.1.101 [Port] 0 [Flags] 2 [Guid] 4067344958 [EditorId] 4067344958 [Version] 1048832 [Id] WindowsEditor(7,Poseidon) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [Physics::Module] Initialized MultithreadedJobDispatcher with 7 workers.
-Refreshing native plugins compatible for Editor in 10.36 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 9.80 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.14f1 (eff2de9070d8)
 [Subsystems] Discovering subsystems at path C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/Resources/UnitySubsystems
@@ -65,49 +65,49 @@ Direct3D:
     Renderer: NVIDIA GeForce RTX 2070 (ID=0x1f07)
     Vendor:   NVIDIA
     VRAM:     8006 MB
-    Driver:   31.0.15.5123
+    Driver:   31.0.15.5152
 Initialize mono
 Mono path[0] = 'C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/Managed'
 Mono path[1] = 'C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56932
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56452
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: C:/Program Files/Unity/Hub/Editor/2022.3.14f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
-Registered in 0.007330 seconds.
-- Loaded All Assemblies, in  0.400 seconds
+Registered in 0.006587 seconds.
+- Loaded All Assemblies, in  0.353 seconds
 Native extension for WindowsStandalone target not found
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.313 seconds
-Domain Reload Profiling: 712ms
-	BeginReloadAssembly (122ms)
+- Finished resetting the current domain, in  0.294 seconds
+Domain Reload Profiling: 645ms
+	BeginReloadAssembly (112ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
-	RebuildCommonClasses (41ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (70ms)
-	LoadAllAssembliesAndSetupDomain (153ms)
-		LoadAssemblies (120ms)
+	RebuildCommonClasses (35ms)
+	RebuildNativeTypeToScriptingClass (10ms)
+	initialDomainReloadingComplete (58ms)
+	LoadAllAssembliesAndSetupDomain (136ms)
+		LoadAssemblies (110ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (152ms)
-			TypeCache.Refresh (150ms)
-				TypeCache.ScanAssembly (134ms)
+		AnalyzeDomain (134ms)
+			TypeCache.Refresh (133ms)
+				TypeCache.ScanAssembly (121ms)
 			ScanForSourceGeneratedMonoScriptInfo (0ms)
-			ResolveRequiredComponents (1ms)
-	FinalizeReload (314ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (295ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (230ms)
+		SetupLoadedEditorAssemblies (226ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (11ms)
-			SetLoadedEditorAssemblies (8ms)
+			InitializePlatformSupportModulesInManaged (8ms)
+			SetLoadedEditorAssemblies (7ms)
 			RefreshPlugins (0ms)
 			BeforeProcessingInitializeOnLoad (2ms)
-			ProcessInitializeOnLoadAttributes (151ms)
-			ProcessInitializeOnLoadMethodAttributes (57ms)
+			ProcessInitializeOnLoadAttributes (142ms)
+			ProcessInitializeOnLoadMethodAttributes (66ms)
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -115,55 +115,55 @@ Domain Reload Profiling: 712ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
-- Loaded All Assemblies, in  0.656 seconds
-Refreshing native plugins compatible for Editor in 4.51 ms, found 6 plugins.
+- Loaded All Assemblies, in  0.809 seconds
+Refreshing native plugins compatible for Editor in 16.08 ms, found 6 plugins.
 Native extension for WindowsStandalone target not found
 Package Manager log level set to [2]
 [Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
 [Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
 [Package Manager] Cannot connect to Unity Package Manager local server
 Mono: successfully reloaded assembly
-- Finished resetting the current domain, in  0.565 seconds
-Domain Reload Profiling: 1219ms
-	BeginReloadAssembly (175ms)
+- Finished resetting the current domain, in  0.806 seconds
+Domain Reload Profiling: 1612ms
+	BeginReloadAssembly (198ms)
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (6ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
-		CreateAndSetChildDomain (22ms)
-	RebuildCommonClasses (34ms)
-	RebuildNativeTypeToScriptingClass (12ms)
-	initialDomainReloadingComplete (42ms)
-	LoadAllAssembliesAndSetupDomain (390ms)
-		LoadAssemblies (287ms)
+		CreateAndSetChildDomain (30ms)
+	RebuildCommonClasses (48ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (66ms)
+	LoadAllAssembliesAndSetupDomain (482ms)
+		LoadAssemblies (364ms)
 		RebuildTransferFunctionScriptingTraits (0ms)
-		AnalyzeDomain (186ms)
-			TypeCache.Refresh (165ms)
-				TypeCache.ScanAssembly (149ms)
-			ScanForSourceGeneratedMonoScriptInfo (15ms)
-			ResolveRequiredComponents (4ms)
-	FinalizeReload (566ms)
+		AnalyzeDomain (226ms)
+			TypeCache.Refresh (201ms)
+				TypeCache.ScanAssembly (180ms)
+			ScanForSourceGeneratedMonoScriptInfo (16ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (807ms)
 		ReleaseScriptCaches (0ms)
 		RebuildScriptCaches (0ms)
-		SetupLoadedEditorAssemblies (410ms)
+		SetupLoadedEditorAssemblies (562ms)
 			LogAssemblyErrors (0ms)
-			InitializePlatformSupportModulesInManaged (6ms)
-			SetLoadedEditorAssemblies (3ms)
+			InitializePlatformSupportModulesInManaged (7ms)
+			SetLoadedEditorAssemblies (6ms)
 			RefreshPlugins (0ms)
-			BeforeProcessingInitializeOnLoad (60ms)
-			ProcessInitializeOnLoadAttributes (312ms)
-			ProcessInitializeOnLoadMethodAttributes (21ms)
-			AfterProcessingInitializeOnLoad (9ms)
+			BeforeProcessingInitializeOnLoad (101ms)
+			ProcessInitializeOnLoadAttributes (415ms)
+			ProcessInitializeOnLoadMethodAttributes (26ms)
+			AfterProcessingInitializeOnLoad (8ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
-		AwakeInstancesAfterBackupRestoration (7ms)
+		AwakeInstancesAfterBackupRestoration (9ms)
 Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
-Refreshing native plugins compatible for Editor in 4.03 ms, found 6 plugins.
+Refreshing native plugins compatible for Editor in 7.38 ms, found 6 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 3274 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 38 unused Assets / (60.3 KB). Loaded Objects now: 3753.
-Memory consumption went from 142.7 MB to 142.7 MB.
-Total: 2.718200 ms (FindLiveObjects: 0.270800 ms CreateObjectMapping: 0.230000 ms MarkObjects: 2.109500 ms  DeleteObjects: 0.107200 ms)
+Memory consumption went from 143.1 MB to 143.0 MB.
+Total: 2.769100 ms (FindLiveObjects: 0.274300 ms CreateObjectMapping: 0.204300 ms MarkObjects: 2.181500 ms  DeleteObjects: 0.108000 ms)
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -181,708 +181,9 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
-  Time since last request: 732582.070556 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00000000000000000000000000000000') in 0.108965 seconds
-Import Error Code:(4)
-Message: Build asset version error: assets/prefabs/toyboxwincondition.prefab in SourceAssetDB has modification time of '2024-02-13T18:37:24.3187332Z' while content on disk has modification time of '2024-02-13T18:37:24.5302051Z'
-  ERROR: Build asset version error: assets/prefabs/toyboxwincondition.prefab in SourceAssetDB has modification time of '2024-02-13T18:37:24.3187332Z' while content on disk has modification time of '2024-02-13T18:37:24.5302051Z'
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 33
-========================================================================
-Received Import Request.
-  Time since last request: 0.075845 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b6b636afe8d52b6d0eae63a1660987a') in 0.009868 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 8.169595 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5536a3962290c799492f6aab31a610c6') in 0.010119 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 2.906726 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be0a2c6915565a58403d4ad93fef8556') in 0.010093 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 1.843703 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a0b9e4e24f944f655db49bfa5d1c20ba') in 0.009732 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 1.205158 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '21ad1eaf8f98ba41fbad85b2557291b1') in 0.009138 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 1.248902 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7550430a54042e8e86ab5c2315e2f10e') in 0.008746 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 2.690287 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8cab20be4b443c1b11d8f8cc1850f10e') in 0.010455 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 5.765888 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8e3e2cf37f37e549f33228be5e42057f') in 0.009822 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 2.360816 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '05a4051351babf03881b079999e1a26e') in 0.011216 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 10.224032 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bafcde073a491e8d22aa42b5f37d7d43') in 0.009377 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 3.867078 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6b7f0a2b0c701617dece6fc4338bb0f0') in 0.009580 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 2.464311 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c3bc236ebe214676d707cd37771c42b7') in 0.009251 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 1.648994 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '718eccd4cbed599e603e5da9272b3410') in 0.009494 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 5.720277 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5f95b8f0f6880ec8ca9969157dfd9c8f') in 0.010086 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 0.608372 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e4a9f1c9314ad1d6f8a4cc7ab3a27d0a') in 0.009817 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 1.618453 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fcba4b62769840d4e1173ce792235f25') in 0.009733 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 101.182278 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c5d1388c72f8fb63d019aff3d7990fe9') in 0.009270 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 9.196058 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c8d18ed452abf5d5c013154e869d792d') in 0.009133 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 6.642855 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7e4bbcbd1636ef03bf49c6068573be1e') in 0.009202 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 16.403503 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23721b23a5664c4133bf6dbaec234345') in 0.010431 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 1.193613 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '15f20201fa56166ec4ee23b127be4248') in 0.009149 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 2.636691 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b962f2765de4d6fb21e89a56e2009075') in 0.009841 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 57.207999 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '642680958d3695ba9abfeb01ade325c3') in 0.009957 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 3.463861 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '573740816085256e91eb66acde28cd31') in 0.009549 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 3.683828 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0778bad9f8812e65c86616fc2d28350d') in 0.009836 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 2.662105 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd2da46078ab2859bfd41b6ca3a1c3dc0') in 0.011444 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 4.920103 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4d4cc0e527233aedbaf45ed954f5772b') in 0.009648 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 1.910302 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c64198573019b33b8facc11122de338') in 0.010001 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 3.477030 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd3430528f49a35aa832530229d47fad6') in 0.010145 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 5.936580 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c0a1dc110a437930fca5ccfdc74df3ad') in 0.009685 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 3.319159 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a02ca6af6467dbb6eeab6a255aac61f7') in 0.010217 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 9.066918 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5b441d36d6b661972b0782a7257b38c5') in 0.010275 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 3.073608 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1a07aa768858541a73dd6ea165ed3805') in 0.009137 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 3.078654 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89d53a474ce9f9148c6e2a4756b67aab') in 0.009201 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 1.037943 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c540c3a1b3bb26dd73b1897175f140d7') in 0.009181 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 2.268183 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bcf00ed55f134be8096082ef33ae9ba') in 0.010044 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 472.070734 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35cc4359b449ced13f86ad623d017123') in 0.011295 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 1.260792 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2b851915c4bcef940d486aaf4f77212e') in 0.009711 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 93
-========================================================================
-Received Import Request.
-  Time since last request: 5905.141605 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b80b08cdae51cd281cff4c56a2984e4e') in 0.012184 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 96
-========================================================================
-Received Import Request.
-  Time since last request: 11.583875 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e2618d62b42d2376793401967a4ff4b8') in 0.009349 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 96
-========================================================================
-Received Import Request.
-  Time since last request: 0.604888 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b9cd96bd940ebcd27f872da169c02767') in 0.010352 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 96
-========================================================================
-Received Import Request.
-  Time since last request: 2.047721 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e32a660046882ecdd6cda1c87eaa647f') in 0.009110 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 96
-========================================================================
-Received Import Request.
-  Time since last request: 1.631301 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '61e63853f59ee0f549e5093ed90174e0') in 0.011581 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 96
-========================================================================
-Received Import Request.
-  Time since last request: 8.371461 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d20d96be018b7e983d288428ef8707f') in 0.009825 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 96
-========================================================================
-Received Import Request.
-  Time since last request: 4.712206 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ff012dc0effc623528e50f46c0483716') in 0.009474 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 96
-========================================================================
-Received Import Request.
-  Time since last request: 5.854124 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e53555fac9fe5d05ee8d239e7ceaf6d0') in 0.009570 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 96
-========================================================================
-Received Import Request.
-  Time since last request: 4.334238 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6037af132ccb07d166b23959a76e0348') in 0.008977 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 96
-========================================================================
-Received Import Request.
-  Time since last request: 17.539632 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fac5cec283e4b3d14b8074d63d180b87') in 0.012254 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 96
-========================================================================
-Received Import Request.
-  Time since last request: 2.860848 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '47f3a17f6604563c5fe879234940b56f') in 0.010355 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 96
-========================================================================
-Received Import Request.
-  Time since last request: 210.013779 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '90fc6340cc4c197d0056d713627771ab') in 0.018376 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 12.165021 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0763b4a000a9a1e5e897b69e519eac29') in 0.012483 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 6.792233 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b29a27880ff6c1a6570c39cf9855da7f') in 0.013616 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 5.713250 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'da3a8fdd929eec27e1fa9dcdaa24b9ad') in 0.015667 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 4.063301 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '104f21de38abf2e911c3225ce60e0c49') in 0.012121 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 5.475457 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1e41b49196081ac40a34aae34b4368fd') in 0.013019 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 2.235825 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf62590f818ab6d31b194becdc8991d0') in 0.012795 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 1.831783 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '45d2eac936c46566e204e7be3e6f087d') in 0.012501 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 1.213793 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '432bc8dae6fe8ecb0915ab5a733e7592') in 0.012110 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 4.322117 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa203d6b5a04f667a1569f286a7a2ea3') in 0.012782 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 1.019899 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '881c7c309268985292c7f782416985fc') in 0.015048 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 2.451041 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd6e355a25fa77a40c54ec37b8cd8a762') in 0.012226 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 2.494666 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e825b73c19a50646c5a3cbedbd61680e') in 0.011861 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 3.322061 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e61686fad98134b375911204f5428cff') in 0.014701 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 1.016810 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b7d8f4b2e7446fe711214e6c698136b7') in 0.012028 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 1.419186 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8214d0031a49206085efc6b30738b8e0') in 0.012061 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 2.488739 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a3ab63b10910fa16b6c9720ed6195e58') in 0.012571 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 6.125590 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8904c044d59cf1fe3b76c53d7bb3bf68') in 0.013732 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 3.087068 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a7e4c75a5b32fc02a61b146366c052e') in 0.013512 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 8.558884 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd32718cd92dfd5c000c86d63722cd8e5') in 0.013130 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 3.313952 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4f94539c407f74f358a54fc77a9c316') in 0.012561 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 3.467612 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '12095d6ccc4f4b8280a1873c84390bb4') in 0.012039 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 2.006994 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53a10c5013a4edb058b6465ce3383314') in 0.011922 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 1.420896 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2a629fd661bd45e6dcb7d4ac784f69bb') in 0.013079 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 7.739918 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3c083216c30f7277a168193d5dbb61a9') in 0.012125 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 4.868061 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a0b4aad94aae24171fc6c89d1f1366c') in 0.013828 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 3.878983 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e8069a109c733c2ec8a1bcac4ce816d4') in 0.011977 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 0.808158 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '39626b47ef928e83e8628febf350463b') in 0.012248 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 2.226589 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '26770a895c846d8aef491c8841ecfd59') in 0.011544 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 0.604534 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e5ee49696fd4c716dcea45573a139e3f') in 0.012327 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 7.460108 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'edfd85ace3c02ac65907b2b7823a2572') in 0.011770 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 30.665995 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6900be31f1e5938315e045193abc5d4') in 0.013197 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 16.942533 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ef307bdf6609c13307f80501a9a497f') in 0.012222 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 4.495740 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fd1b8ba7545bbcdeb3177449b9c7d41e') in 0.013322 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 58.344749 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '777ad77df22157f6c79344b963953384') in 0.012762 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 6.611276 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8382e77896384b68cc636bef47a7d34f') in 0.011886 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 1.843962 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dda546a76e9354203e83512b6af2e3d3') in 0.013106 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
-========================================================================
-Received Import Request.
-  Time since last request: 8.661831 seconds.
-  path: Assets/Prefabs/ToyBoxWinCondition.prefab
-  artifactKey: Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Prefabs/ToyBoxWinCondition.prefab using Guid(0c19e325269e6234e8f3a6f9596bd332) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dbeb19c27161e94e3fac0ba5ae379cf') in 0.011870 seconds
-Number of updated asset objects reloaded before import = 0
-Number of asset objects unloaded after import = 113
+  Time since last request: 68675.146839 seconds.
+  path: Assets/Models/barren_trees.fbx
+  artifactKey: Guid(b1df8e785d77e3b4cac3aa162e2b5680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/barren_trees.fbx using Guid(b1df8e785d77e3b4cac3aa162e2b5680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2995d7b93521c3e1e5b9dd2bc36a9c51') in 0.303880 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 15
