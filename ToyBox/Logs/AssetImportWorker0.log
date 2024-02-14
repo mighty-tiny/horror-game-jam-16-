@@ -187,3 +187,67 @@ Received Import Request.
 Start importing Assets/Models/barren_trees.fbx using Guid(b1df8e785d77e3b4cac3aa162e2b5680) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2995d7b93521c3e1e5b9dd2bc36a9c51') in 0.303880 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 15
+========================================================================
+Received Import Request.
+  Time since last request: 118.999623 seconds.
+  path: Assets/Prefabs/barren_trees.prefab
+  artifactKey: Guid(8f886e40a8abb8140abdd697918cf4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/barren_trees.prefab using Guid(8f886e40a8abb8140abdd697918cf4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '94f222356bfc8b6df267761180a2c2a5') in 0.013991 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 24.588700 seconds.
+  path: Assets/Prefabs/barren_trees.prefab
+  artifactKey: Guid(8f886e40a8abb8140abdd697918cf4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/barren_trees.prefab using Guid(8f886e40a8abb8140abdd697918cf4d7) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '09828107db7fb1ceab720aeb68865600') in 0.011450 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 9.566802 seconds.
+  path: Assets/Prefabs/barren_trees 1.prefab
+  artifactKey: Guid(21971d031c8f8d54faa51e7f6af3c4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/barren_trees 1.prefab using Guid(21971d031c8f8d54faa51e7f6af3c4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c16e466587da7361d23d4dd0fead7383') in 0.012613 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 9.597429 seconds.
+  path: Assets/Prefabs/barren_trees 1.prefab
+  artifactKey: Guid(21971d031c8f8d54faa51e7f6af3c4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/barren_trees 1.prefab using Guid(21971d031c8f8d54faa51e7f6af3c4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '076347ea67a24f7429fca65b059d45b7') in 0.012665 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 26.351192 seconds.
+  path: Assets/Prefabs/barren_right_tree.prefab
+  artifactKey: Guid(21971d031c8f8d54faa51e7f6af3c4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/barren_right_tree.prefab using Guid(21971d031c8f8d54faa51e7f6af3c4cb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '25f6bf9a886d3d484a249e1758e82d39') in 0.006895 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 4.233727 seconds.
+  path: Assets/Prefabs/barren_trees 1.prefab
+  artifactKey: Guid(6924e57f4ba140d4f80d0974210e5ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/barren_trees 1.prefab using Guid(6924e57f4ba140d4f80d0974210e5ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '583733f73f18f29dc34eb8fe1535a546') in 0.006371 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 28
+========================================================================
+Received Import Request.
+  Time since last request: 4.001136 seconds.
+  path: Assets/Prefabs/barren_trees 1.prefab
+  artifactKey: Guid(6924e57f4ba140d4f80d0974210e5ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/barren_trees 1.prefab using Guid(6924e57f4ba140d4f80d0974210e5ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dfa95642348fc3a60c3dd54d9b1c085f') in 0.013729 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
+========================================================================
+Received Import Request.
+  Time since last request: 11.640007 seconds.
+  path: Assets/Prefabs/barren_left_tree.prefab
+  artifactKey: Guid(6924e57f4ba140d4f80d0974210e5ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/barren_left_tree.prefab using Guid(6924e57f4ba140d4f80d0974210e5ea2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fba8debef8a05fbbcba5b08974d2ccac') in 0.006935 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 24
